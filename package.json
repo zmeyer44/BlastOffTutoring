@@ -39,12 +39,12 @@
     "husky": "4.3.0",
     "lerna": "3.22.1",
     "lint-staged": "10.4.0",
+    "now": "20.1.1",
     "stylelint": "13.7.2",
     "stylelint-config-standard": "20.0.0",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-order": "4.1.0",
-    "stylelint-processor-styled-components": "1.10.0",
-    "now": "20.1.1"
+    "stylelint-processor-styled-components": "1.10.0"
   },
   "bin": {
     "pagerland-init": "./packages/cli/index.js"
