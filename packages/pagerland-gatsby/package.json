@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "now-dev": "gatsby develop -p $PORT --prefix-paths",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
