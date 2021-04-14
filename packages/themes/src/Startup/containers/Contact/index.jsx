@@ -315,14 +315,14 @@ Contact.defaultProps = {
     lineHeight: 1,
   },
   MailerCardProps: {
-    bg: 'primary',
+    bg: 'accent',
     width: '100%',
     maxWidth: 544,
     p: {
       _: 24,
       md: 5,
     },
-    boxShadow: 'primary',
+    boxShadow: 'accent',
     borderRadius: {
       _: 'large',
       md: 'xxxLarge',

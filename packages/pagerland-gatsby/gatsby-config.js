@@ -2,9 +2,9 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Pagerland Gatsby',
+    title: 'Blast Off Tutoring',
     description: '',
-    author: 'Pagerland Team',
+    author: 'Blast Off Team',
   },
   pathPrefix: process.env.GATSBY_APP_DIR || '',
   plugins: [
@@ -37,13 +37,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Blast Off Tutoring',
+        short_name: 'Blast Off',
         start_url: '/',
-        background_color: `#189AB4`,
-        theme_color: `#189AB4`,
+        background_color: `#012466`,
+        theme_color: `#012466`,
         display: 'minimal-ui',
-        icon: 'src/images/icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.ico', // This path is relative to the root of the site.
       },
     },
     {

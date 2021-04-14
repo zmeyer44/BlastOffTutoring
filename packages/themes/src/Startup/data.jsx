@@ -1,7 +1,9 @@
+import React from 'react';
 import { smoothLinkProps } from '@pagerland/common/src/utils';
 import { Link } from 'react-scroll';
 
 import textToMultiline from '@pagerland/common/src/utils/textToMultiline';
+import Img from '@pagerland/common/src/components/Img';
 
 import MapMarker from '@pagerland/icons/src/monochrome/MapMarker';
 import MobilePhone from '@pagerland/icons/src/monochrome/MobilePhone';
@@ -13,17 +15,17 @@ import Twitter from '@pagerland/icons/src/monochrome/Twitter';
 import Linkedin from '@pagerland/icons/src/monochrome/Linkedin';
 
 import * as Yup from 'yup';
-import Welcome from './assets/welcome.jpg';
-import Welcome2x from './assets/welcome@2x.jpg';
-import AboutUs from './assets/about-us.jpg';
-import AboutUs2x from './assets/about-us@2x.jpg';
+import Welcome from './assets/hero.png';
+import Welcome2x from './assets/hero.png';
+import AboutUs from './assets/merch.png';
+import AboutUs2x from './assets/merch@2x.png';
 
-import Avatar1 from './assets/avatars/avatar-1.jpg';
-import Avatar12x from './assets/avatars/avatar-1@2x.jpg';
-import Avatar2 from './assets/avatars/avatar-2.jpg';
-import Avatar22x from './assets/avatars/avatar-2@2x.jpg';
-import Avatar3 from './assets/avatars/avatar-3.jpg';
-import Avatar32x from './assets/avatars/avatar-3@2x.jpg';
+import Avatar1 from './assets/avatars/zach.jpg';
+import Avatar12x from './assets/avatars/zach@2x.jpg';
+import Avatar2 from './assets/avatars/mitchell.jpg';
+import Avatar22x from './assets/avatars/mitchell@2x.jpg';
+import Avatar3 from './assets/avatars/danielle.jpg';
+import Avatar32x from './assets/avatars/danielle@2x.jpg';
 import Avatar4 from './assets/avatars/avatar-4.jpg';
 import Avatar42x from './assets/avatars/avatar-4@2x.jpg';
 import Avatar5 from './assets/avatars/avatar-5.jpg';
@@ -35,9 +37,13 @@ import Avatar72x from './assets/avatars/avatar-7@2x.jpg';
 import Avatar8 from './assets/avatars/avatar-8.jpg';
 import Avatar82x from './assets/avatars/avatar-8@2x.jpg';
 
-import Estimations from './assets/estimation.svg';
-import Ecommerce from './assets/ecommerce.svg';
-import Support from './assets/support.svg';
+import features1 from './assets/feature1.png';
+import features2 from './assets/feature2.png';
+import features3 from './assets/feature3.png';
+
+import SignIn from './assets/signin.svg';
+import Search from './assets/search.svg';
+import VideoChat from './assets/videochat.svg';
 
 import PricingBasic from './assets/pricing/basic.svg';
 import PricingAdvanced from './assets/pricing/advanced.svg';
@@ -55,7 +61,7 @@ import Article5 from './assets/articles/article-5.jpg';
 import Article52x from './assets/articles/article-5@2x.jpg';
 
 export default {
-  title: 'Startup',
+  title: 'Blast Off Tutoring',
   navbar: {
     links: [
       {
@@ -75,6 +81,10 @@ export default {
         label: 'Team',
       },
       {
+        to: 'features',
+        label: 'Features',
+      },
+      {
         to: 'pricing',
         label: 'Pricing',
       },
@@ -89,9 +99,8 @@ export default {
     ],
     actions: [
       {
-        href:
-          'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
-        label: 'Buy this theme',
+        href: 'https://app.blastofftutoring.com',
+        label: 'Sign Up',
       },
     ],
   },
@@ -139,28 +148,27 @@ export default {
     title: 'Our services',
     services: [
       {
-        icon: Estimations,
-        title: 'Estimation',
+        icon: SignIn,
+        title: 'Sign Up',
         text:
-          'Vivamus eleifend nec purus eget rutrum. Cras urna lacus, consectetur ut erat sed, commodo gravida mauris. Sed eu vulputate sapien. Nulla consectetur efficitur congue.',
+          'Create an account with the school code provided by your district to start exploring the platform.',
       },
       {
-        icon: Ecommerce,
-        title: 'Ecommerce',
+        icon: Search,
+        title: 'Find a Tutor',
         text:
-          'Vivamus eleifend nec purus eget rutrum. Cras urna lacus, consectetur ut erat sed, commodo gravida mauris. Sed eu vulputate sapien. Nulla consectetur efficitur congue.',
+          'View our library of highschool tutors loooking to help out in exchange for community service credit.',
       },
       {
-        icon: Support,
-        title: 'Support',
+        icon: VideoChat,
+        title: 'Schedule a Meeting',
         text:
-          'Vivamus eleifend nec purus eget rutrum. Cras urna lacus, consectetur ut erat sed, commodo gravida mauris. Sed eu vulputate sapien. Nulla consectetur efficitur congue.',
+          'Once you faound the right tutor for you, start chatting and set up a time to meet though our online video chat.',
       },
     ],
     cta: {
-      label: 'Request a free demo',
-      href:
-        'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+      label: 'Learn More',
+      href: 'https://blastofftutoring.netlify.app/#contact',
     },
   },
   about: {
@@ -173,8 +181,7 @@ export default {
       'Nunc nec ultricies quam. Integer iaculis erat id leo consequat ultricies. Pellentesque mattis ultricies rhoncus. Maecenas vehicula efficitur sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam laoreet at erat sit amet efficitur. Nam interdum tellus molestie, elementum felis in, consectetur ipsum. Aenean justo dolor, pretium nec dui eget, vulputate ullamcorper dolor.',
     cta: {
       label: 'Learn more bout us',
-      href:
-        'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+      href: 'https://blastofftutoring.com/about',
     },
   },
   team: {
@@ -192,8 +199,8 @@ export default {
           src: Avatar1,
           srcSet: `${Avatar1} 1x, ${Avatar12x} 2x`,
         },
-        name: 'Timothy Wilson',
-        position: 'Co-Founder, CEO',
+        name: 'Zach Meyer',
+        position: 'Co-Founder, President',
         social: {
           linkedin: '#',
           twitter: '#',
@@ -205,7 +212,7 @@ export default {
           src: Avatar2,
           srcSet: `${Avatar2} 1x, ${Avatar22x} 2x`,
         },
-        name: 'Bernard Nguyen',
+        name: 'Mitchell Meyer',
         position: 'Co-Founder, CEO',
         social: {
           linkedin: '#',
@@ -218,78 +225,102 @@ export default {
           src: Avatar3,
           srcSet: `${Avatar3} 1x, ${Avatar32x} 2x`,
         },
-        name: 'Bessie Richards',
-        position: 'Co-Founder, CEO',
+        name: 'Danielle Brenner',
+        position: 'Social Media Manager',
         social: {
           linkedin: '#',
           twitter: '#',
           skype: '#',
         },
       },
+      // {
+      //   avatar: {
+      //     src: Avatar4,
+      //     srcSet: `${Avatar4} 1x, ${Avatar42x} 2x`,
+      //   },
+      //   name: 'Judith Black',
+      //   position: 'Co-Founder, CEO',
+      //   social: {
+      //     linkedin: '#',
+      //     twitter: '#',
+      //     skype: '#',
+      //   },
+      // },
+      // {
+      //   avatar: {
+      //     src: Avatar5,
+      //     srcSet: `${Avatar5} 1x, ${Avatar52x} 2x`,
+      //   },
+      //   name: 'Robert Edwards',
+      //   position: 'Co-Founder, CEO',
+      //   social: {
+      //     linkedin: '#',
+      //     twitter: '#',
+      //     skype: '#',
+      //   },
+      // },
+      // {
+      //   avatar: {
+      //     src: Avatar6,
+      //     srcSet: `${Avatar6} 1x, ${Avatar62x} 2x`,
+      //   },
+      //   name: 'Dianne Robertson',
+      //   position: 'Co-Founder, CEO',
+      //   social: {
+      //     linkedin: '#',
+      //     twitter: '#',
+      //     skype: '#',
+      //   },
+      // },
+      // {
+      //   avatar: {
+      //     src: Avatar7,
+      //     srcSet: `${Avatar7} 1x, ${Avatar72x} 2x`,
+      //   },
+      //   name: 'Shane Black',
+      //   position: 'Co-Founder, CEO',
+      //   social: {
+      //     linkedin: '#',
+      //     twitter: '#',
+      //     skype: '#',
+      //   },
+      // },
+      // {
+      //   avatar: {
+      //     src: Avatar8,
+      //     srcSet: `${Avatar8} 1x, ${Avatar82x} 2x`,
+      //   },
+      //   name: 'Nathan Fox',
+      //   position: 'Co-Founder, CEO',
+      //   social: {
+      //     linkedin: '#',
+      //     twitter: '#',
+      //     skype: '#',
+      //   },
+      // },
+    ],
+  },
+  features: {
+    title: 'Discover what makes Blast Off so great',
+    text:
+      'Donec turpis justo, egestas at nisl nec, ullamcorper rutrum justo. Morbi sed blandit justo, ac molestie diam. Sed sapien augue, vestibulum id nisl a, gravida consectetur lectus. Duis vehicula suscipit consectetur.',
+    features: [
       {
-        avatar: {
-          src: Avatar4,
-          srcSet: `${Avatar4} 1x, ${Avatar42x} 2x`,
-        },
-        name: 'Judith Black',
-        position: 'Co-Founder, CEO',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          skype: '#',
-        },
+        title: 'Find a Tutor',
+        text: 'View our library of vetted tutors to find one that is perfect for you.',
+        details: <Img src={features1} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
       },
       {
-        avatar: {
-          src: Avatar5,
-          srcSet: `${Avatar5} 1x, ${Avatar52x} 2x`,
-        },
-        name: 'Robert Edwards',
-        position: 'Co-Founder, CEO',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          skype: '#',
-        },
+        title: 'Send a message',
+        text:
+          'Once you found the right tutor, start chatting with them to schedule a time to meet.',
+        details: <Img src={features2} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
       },
       {
-        avatar: {
-          src: Avatar6,
-          srcSet: `${Avatar6} 1x, ${Avatar62x} 2x`,
-        },
-        name: 'Dianne Robertson',
-        position: 'Co-Founder, CEO',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          skype: '#',
-        },
-      },
-      {
-        avatar: {
-          src: Avatar7,
-          srcSet: `${Avatar7} 1x, ${Avatar72x} 2x`,
-        },
-        name: 'Shane Black',
-        position: 'Co-Founder, CEO',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          skype: '#',
-        },
-      },
-      {
-        avatar: {
-          src: Avatar8,
-          srcSet: `${Avatar8} 1x, ${Avatar82x} 2x`,
-        },
-        name: 'Nathan Fox',
-        position: 'Co-Founder, CEO',
-        social: {
-          linkedin: '#',
-          twitter: '#',
-          skype: '#',
-        },
+        title: 'Video Chat',
+        text:
+          'Use our live video chat app to meet with a tutor. We have a live whiteboard to work out problems.',
+        details: <Img src={features3} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
       },
     ],
   },
@@ -301,24 +332,24 @@ export default {
         {
           icon: PricingBasic,
           title: 'Basic',
-          price: '9.99',
+          price: '39',
           period: 'month',
           features: [
             {
-              text: 'users',
+              text: 'students',
+              prefix: '500',
+            },
+            {
+              text: 'school',
+              prefix: '1',
+            },
+            {
+              text: 'administrator accounts',
               prefix: '2',
             },
             {
-              text: 'estimates per month',
-              prefix: '10',
-            },
-            {
-              text: 'invoices per month',
-              prefix: '10',
-            },
-            {
-              text: 'support',
-              prefix: 'Basic',
+              text: 'promotional items',
+              prefix: 'Free',
             },
           ],
           button: {
@@ -331,29 +362,29 @@ export default {
         },
         {
           icon: PricingAdvanced,
-          title: 'Advanced',
-          price: '19.99',
+          title: 'Professional',
+          price: '79',
           period: 'month',
           features: [
             {
-              text: 'users',
+              text: 'students',
+              prefix: '2,000',
+            },
+            {
+              text: 'schools',
+              prefix: '3',
+            },
+            {
+              text: 'administrator accounts',
               prefix: '5',
             },
             {
-              text: 'estimates per month',
-              prefix: '20',
-            },
-            {
-              text: 'invoices per month',
-              prefix: '20',
-            },
-            {
-              text: 'support',
-              prefix: 'Basic',
+              text: 'accounts',
+              prefix: 'Parent',
             },
           ],
           button: {
-            text: 'Buy advanced plan',
+            text: 'Buy professional plan',
             ButtonProps: {
               as: 'a',
               href: 'https://mypags.app',
@@ -362,29 +393,29 @@ export default {
         },
         {
           icon: PricingExpert,
-          title: 'Expert',
-          price: '29.99',
+          title: 'Ultimate',
+          price: '149',
           period: 'month',
           features: [
             {
-              text: 'users',
+              text: 'students',
+              prefix: 'Unlimited',
+            },
+            {
+              text: 'schools',
+              prefix: '5',
+            },
+            {
+              text: 'administrator accounts',
               prefix: '10',
             },
             {
-              text: 'estimates per month',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'invoices per month',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'support',
-              prefix: 'Priority',
+              text: 'accounts',
+              prefix: 'Parent',
             },
           ],
           button: {
-            text: 'Buy expert plan',
+            text: 'Buy ultimate plan',
             ButtonProps: {
               as: 'a',
               href: 'https://mypags.app',
@@ -402,7 +433,7 @@ export default {
         src: Article1,
         srcSet: `${Article1} 1x, ${Article12x} 2x`,
         date: 'Today',
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        title: "Online learning is here to stay, so it's time for you to adjust",
         text:
           'Nullam sed tellus nec arcu mollis iaculis. Aliquam eget velit a libero suscipit tempor eget at leo. Vestibulum commodo tempor gravida. Donec dictum nunc at lorem euismod, et faucibus ante consectetur. Nullam porttitor eros in ligula posuere dignissim.',
       },
@@ -411,28 +442,28 @@ export default {
         src: Article2,
         srcSet: `${Article2} 1x, ${Article22x} 2x`,
         date: 'Yesterday',
-        title: 'Ut ornare augue quis diam vehicula, vitae vulputate mauris',
+        title: 'What computers are changing the game for students at home',
       },
       {
         url: '#',
         src: Article3,
         srcSet: `${Article3} 1x, ${Article32x} 2x`,
         date: 'Last week',
-        title: 'Pellentesque finibus porttitor mauris, nec tempor nulla',
+        title: 'Drones used to enhance virtual learning experience',
       },
       {
         url: '#',
         src: Article4,
         srcSet: `${Article4} 1x, ${Article42x} 2x`,
         date: '2 weeks ago',
-        title: 'Phasellus ornare metus sit amet luctus bibendum',
+        title: 'Learn computer science for free at home',
       },
       {
         url: '#',
         src: Article5,
         srcSet: `${Article5} 1x, ${Article52x} 2x`,
         date: 'Last month',
-        title: 'Donec auctor ante sit amet elit pretium condimentum',
+        title: 'Best ways to collaborate virtually',
       },
     ],
     cta: {
@@ -446,47 +477,47 @@ export default {
     sections: [
       {
         icon: MapMarker,
-        text: textToMultiline`5263 Sunset St undefined Salinas,\nWest Virginia 25420\nUnited States`,
+        text: textToMultiline`71 Roundtree Drive Plainview,\nNew York 11803\nUnited States`,
       },
       {
         icon: MobilePhone,
-        text: '(219) 555-0114',
+        text: '(516) 555-0114',
       },
       {
         icon: PaperAirplane,
-        text: 'nathan.roberts@example.com',
+        text: 'support@Blastofftutoring.com',
       },
     ],
     socialLinks: [
       {
         icon: FacebookF,
-        href: 'https://mypags.app',
+        href: 'https://facebook.com',
         title: 'Facebook',
       },
       {
         icon: Instagram,
-        href: 'https://mypags.app',
+        href: 'https://instagram.com',
         title: 'Instagram',
       },
       {
         icon: Twitter,
-        href: 'https://mypags.app',
+        href: 'https://twitter.com',
         title: 'Twitter',
       },
       {
         icon: Linkedin,
-        href: 'https://mypags.app',
+        href: 'https://linkedin.com',
         title: 'Linkedin',
       },
     ],
     mailer: {
-      title: 'Request a demo',
-      cta: 'Send request',
+      title: 'Contact us',
+      cta: 'Send message',
       validationSchema: Yup.object({
-        name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
-        company: Yup.string().required('Required'),
+        name: Yup.string().max(20, 'Must be 20 characters or less').required('Required'),
+        school: Yup.string().required('Required'),
         email: Yup.string().email('Must be an email').required('Required'),
-        date: Yup.string().required('Required'),
+        comment: Yup.string().required('Required'),
       }),
       // eslint-disable-next-line no-undef
       onSubmit: values => window.alert(`Form sent with values ${JSON.stringify(values)}`),
@@ -498,9 +529,9 @@ export default {
           initialValue: '',
         },
         {
-          name: 'company',
-          label: 'Company',
-          placeholder: 'i.e. Best Trade Ltd.',
+          name: 'school',
+          label: 'School',
+          placeholder: 'i.e. North Central School',
           initialValue: '',
         },
         {
@@ -511,10 +542,10 @@ export default {
           initialValue: '',
         },
         {
-          name: 'date',
-          label: 'Date and time',
-          placeholder: 'Choose',
-          type: 'datetime-local',
+          name: 'comment',
+          label: 'Comment',
+          placeholder: 'I was wondering about...',
+          type: 'text',
           initialValue: '',
         },
       ],
@@ -524,15 +555,13 @@ export default {
     links: [
       {
         label: 'Disclaimer',
-        href:
-          'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+        href: 'https://blastofftutoring.com',
       },
       {
         label: 'Terms & conditions',
-        href:
-          'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+        href: 'https://blastofftutoring.com',
       },
     ],
   },
-  copyright: '© 2020 Coffeecream Themes',
+  copyright: '© 2021 Blast Off Tutoring',
 };

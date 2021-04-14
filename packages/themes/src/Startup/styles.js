@@ -12,8 +12,8 @@ export const colors = {
   error: '#EB5757',
   success: '#27AE60',
   shades: {
-    primary: ['#ffd800', '#126F87', '#1895B4', '#1EBAE1'],
-    secondary: ['#012466', '#75C3B9', '#98D2CB', '#BCE2DD'],
+    primary: ['#ffd800', '#FFEC80', '#FFF6C0', '#FFE240'],
+    secondary: ['#012466', '#405A8C', '516996', '6177A0'],
     accent: ['#F24F28', '#F57557', '#F89D87', '#FBC4B7'],
   },
   gray: ['#3D4042', '#6E7477', '#A2A6A9', '#BDC0C2', '#D7D9DA', '#E4E6E7', '#F7F7F8', '#FFFFFF'],
