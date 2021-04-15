@@ -168,7 +168,7 @@ export default {
     ],
     cta: {
       label: 'Learn More',
-      href: 'https://blastofftutoring.netlify.app/#contact',
+      href: 'https://blastofftutoring.netlify.app/',
     },
   },
   about: {
@@ -190,8 +190,7 @@ export default {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu magna pharetra sem ullamcorper bibendum quis et mauris. Phasellus tincidunt iaculis porttitor. Sed ut mi varius, gravida nulla eget, bibendum est. Ut auctor nec erat vitae placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
     cta: {
       label: 'Contact us',
-      href:
-        'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+      href: 'https://blastofftutoring.netlify.app/',
     },
     people: [
       {
@@ -468,8 +467,7 @@ export default {
     ],
     cta: {
       label: 'Read all news on Medium',
-      href:
-        'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+      href: 'https://blastofftutoring.netlify.app/',
     },
   },
   contact: {
