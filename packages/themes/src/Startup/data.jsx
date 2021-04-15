@@ -99,7 +99,7 @@ export default {
     ],
     actions: [
       {
-        href: 'https://app.blastofftutoring.com',
+        href: 'https://blast-off-tutoring.web.app/',
         label: 'Sign Up',
       },
     ],

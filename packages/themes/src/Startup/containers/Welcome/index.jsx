@@ -172,6 +172,7 @@ Welcome.defaultProps = {
       _: 90,
       lg: 0,
     },
+    overflow: 'hidden',
   },
   ImageProps: {
     width: '100%',
