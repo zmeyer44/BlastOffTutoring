@@ -11,7 +11,7 @@ import Icon from '@pagerland/common/src/components/Icon';
 
 import LinkedinAlt from '@pagerland/icons/src/monochrome/LinkedinAlt';
 import Twitter from '@pagerland/icons/src/monochrome/Twitter';
-import Skype from '@pagerland/icons/src/monochrome/Skype';
+import Instagram from '@pagerland/icons/src/monochrome/Instagram';
 
 import Link from '@pagerland/common/src/components/Link';
 import data from '../../data';
@@ -36,7 +36,7 @@ const Team = ({
   PositionProps,
   LinkedinIconProps,
   TwitterIconProps,
-  SkypeIconProps,
+  InstagramIconProps,
 }) => (
   <Box name={name} {...WrapperProps}>
     <Container {...ContainerProps}>
@@ -63,9 +63,9 @@ const Team = ({
                   <Icon icon={Twitter} {...TwitterIconProps} />
                 </Link>
               )}
-              {person.social.skype && (
-                <Link href={person.social.skype}>
-                  <Icon icon={Skype} {...SkypeIconProps} />
+              {person.social.instagram && (
+                <Link href={person.social.instagram}>
+                  <Icon icon={Instagram} {...InstagramIconProps} />
                 </Link>
               )}
             </Box>
@@ -147,9 +147,9 @@ Team.propTypes = {
    */
   TwitterIconProps: PropTypes.object,
   /**
-   * Props of skype link icon
+   * Props of instagram link icon
    */
-  SkypeIconProps: PropTypes.object,
+  InstagramIconProps: PropTypes.object,
   /**
    * Title node of component
    */
@@ -177,7 +177,7 @@ Team.propTypes = {
       social: PropTypes.shape({
         linkedin: PropTypes.string,
         twitter: PropTypes.string,
-        skype: PropTypes.string,
+        instagram: PropTypes.string,
       }),
     }),
   ),
@@ -257,7 +257,7 @@ Team.defaultProps = {
     color: 'secondary',
     fontSize: 24,
   },
-  SkypeIconProps: {
+  InstagramIconProps: {
     mx: 2,
     color: 'accent',
     fontSize: 24,

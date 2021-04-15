@@ -100,7 +100,7 @@ export default {
     actions: [
       {
         href: 'https://blast-off-tutoring.web.app/',
-        label: 'Sign Up',
+        label: 'Sign In',
       },
     ],
   },
@@ -201,9 +201,9 @@ export default {
         name: 'Zach Meyer',
         position: 'Co-Founder, President',
         social: {
-          linkedin: '#',
+          linkedin: 'https://www.linkedin.com/in/zach-meyer-68a558168/',
           twitter: '#',
-          skype: '#',
+          instagram: 'https://www.instagram.com/zachmeyer44/',
         },
       },
       {
@@ -214,9 +214,9 @@ export default {
         name: 'Mitchell Meyer',
         position: 'Co-Founder, CEO',
         social: {
-          linkedin: '#',
+          linkedin: 'https://www.linkedin.com/in/mitchell-meyer-887150207/',
           twitter: '#',
-          skype: '#',
+          instagram: 'https://www.instagram.com/_mitchmeyer/',
         },
       },
       {
@@ -229,7 +229,7 @@ export default {
         social: {
           linkedin: '#',
           twitter: '#',
-          skype: '#',
+          instagram: 'https://www.instagram.com/daniellebrennerr/',
         },
       },
       // {
@@ -494,7 +494,7 @@ export default {
       },
       {
         icon: Instagram,
-        href: 'https://instagram.com',
+        href: 'https://www.instagram.com/blastofftutoring/',
         title: 'Instagram',
       },
       {
