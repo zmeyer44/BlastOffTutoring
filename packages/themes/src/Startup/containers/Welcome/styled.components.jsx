@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import Container from '@pagerland/common/src/components/Container';
 import Img from '@pagerland/common/src/components/Img';
-// import Circle from '@pagerland/common/src/components/Circle';
-import { colors } from '../../styles';
+import circle from '../../assets/circle.png';
 
 export const ContainerWithBackground = styled(Container)`
   position: relative;
-
   &::before {
     content: ' ';
     width: 100vw;
@@ -38,7 +36,7 @@ export const ContainerWithBackground = styled(Container)`
     height: 100%;
     max-width: 600px;
     max-height: 600px;
-    background: url('/static/circle.png') center center / contain no-repeat;
+    background: url(${circle}) center center / contain no-repeat;
     opacity: 0.1;
   }
 `;

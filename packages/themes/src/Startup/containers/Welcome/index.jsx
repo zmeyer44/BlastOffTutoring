@@ -5,7 +5,7 @@ import Box from '@pagerland/common/src/components/Box';
 import Fade from 'react-reveal/Fade';
 import Typography from '@pagerland/common/src/components/Typography';
 import Button from '@pagerland/common/src/components/Button';
-
+import circle from '../../assets/circle.png';
 import data from '../../data';
 
 import { ContainerWithBackground, RoundedImage } from './styled.components';
@@ -144,6 +144,7 @@ Welcome.defaultProps = {
       ml: 900,
     },
   },
+
   CaptionProps: {
     my: {
       _: 30,
