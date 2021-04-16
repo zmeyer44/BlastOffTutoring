@@ -18,7 +18,7 @@ import {
   Contact,
 } from '@pagerland/themes/src/Startup/containers';
 
-import preview from '@pagerland/themes/src/Startup/assets/preview.jpg';
+import preview from '@pagerland/themes/src/Startup/assets/preview.png';
 
 import SEO from '../components/SEO';
 
@@ -29,7 +29,7 @@ const Startup = ({ url }) => (
       <meta name="theme-color" content={theme.colors.primary} />
       <meta property="og:image" content={`${url}${preview}`} />
     </Helmet>
-    <SEO title="Startup" />
+    <SEO title="Home" />
 
     <Sticky style={{ zIndex: 999, position: 'relative' }}>
       <Navbar />

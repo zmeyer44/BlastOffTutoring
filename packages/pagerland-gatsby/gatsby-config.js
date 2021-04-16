@@ -3,7 +3,8 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: 'Blast Off Tutoring',
-    description: '',
+    description:
+      'We offer free peer-2-peer tutoring for students of all ages. Tutors will receive community service credit which can be used for honors societies of college applications.',
     author: 'Blast Off Team',
   },
   pathPrefix: process.env.GATSBY_APP_DIR || '',
@@ -43,7 +44,7 @@ module.exports = {
         background_color: `#012466`,
         theme_color: `#012466`,
         display: 'minimal-ui',
-        icon: 'src/images/favicon-32x32.png', // This path is relative to the root of the site.
+        icon: 'src/images/android-chrome-192x192.png', // This path is relative to the root of the site.
       },
     },
     {

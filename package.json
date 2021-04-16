@@ -1,7 +1,7 @@
 {
-  "name": "@pagerland/templates",
+  "name": "blast_off_tutoring",
   "version": "1.0.0",
-  "description": "",
+  "description": "We offer free peer-2-peer tutoring for students of all ages. Tutors will receive community service credit which can be used for honors societies of college applications.",
   "main": "index.js",
   "scripts": {
     "gatsby:dev": "yarn workspace @pagerland/gatsby dev",
