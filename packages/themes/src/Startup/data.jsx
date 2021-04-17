@@ -111,8 +111,10 @@ export default {
     actions: [
       {
         label: 'Get Started',
-        to: 'services',
-        as: Link,
+        to: '#',
+        href: 'https://blast-off-tutoring.web.app/',
+        target: '_blank',
+        as: 'a',
         ...smoothLinkProps,
         variant: 'white',
       },
@@ -121,28 +123,6 @@ export default {
       src: Welcome,
       srcSet: `${Welcome} 1x, ${Welcome2x} 2x`,
     },
-    avatars: [
-      {
-        src: Avatar1,
-        srcSet: `${Avatar1} 1x, ${Avatar12x} 2x`,
-      },
-      {
-        src: Avatar2,
-        srcSet: `${Avatar2} 1x, ${Avatar22x} 2x`,
-      },
-      {
-        src: Avatar3,
-        srcSet: `${Avatar3} 1x, ${Avatar32x} 2x`,
-      },
-      {
-        src: Avatar4,
-        srcSet: `${Avatar4} 1x, ${Avatar42x} 2x`,
-      },
-      {
-        src: Avatar5,
-        srcSet: `${Avatar5} 1x, ${Avatar52x} 2x`,
-      },
-    ],
   },
   services: {
     title: 'Our services',

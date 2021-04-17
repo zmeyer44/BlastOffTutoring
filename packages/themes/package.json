@@ -1,5 +1,5 @@
 {
-  "name": "blast_off_tutoring",
+  "name": "@pagerland/themes",
   "version": "1.0.0",
   "description": "We offer free peer-2-peer tutoring for students of all ages. Tutors will receive community service credit which can be used for honors societies of college applications.",
   "main": "src/index.js",
