@@ -35,66 +35,68 @@ const Contact = ({
   MailerCardProps,
   MailerTitleProps,
   MailerButtonProps,
-}) => (
-  <Box name={name} {...WrapperProps}>
-    <Background />
-    <Container {...ContainerProps}>
-      <Box {...DetailsWrapperProps}>
-        <Fade bottom cascade duration={600}>
-          <Typography {...TitleProps}>{title}</Typography>
-          {sections.map((section, key) => (
-            <Box key={key} {...SectionItemProps}>
-              <Icon
-                color={['primary', 'secondary', 'accent'][key % 3]}
-                icon={section.icon}
-                {...SectionIconProps}
-              />
-              <Typography {...SectionTextProps}>{section.text}</Typography>
-            </Box>
-          ))}
-          <Box {...SocialLinkWrapperProps}>
-            {socialLinks?.map((socialLink, key) => (
-              <Fade left duration={600} key={socialLink.title} distance="10px" delay={100 * key}>
-                <Link as="a" href={socialLink.href} title={socialLink.title} {...SocialLinkProps}>
-                  <Icon icon={socialLink.icon} />
-                </Link>
-              </Fade>
+}) => {
+  return (
+    <Box name={name} {...WrapperProps}>
+      <Background />
+      <Container {...ContainerProps}>
+        <Box {...DetailsWrapperProps}>
+          <Fade bottom cascade duration={600}>
+            <Typography {...TitleProps}>{title}</Typography>
+            {sections.map((section, key) => (
+              <Box key={key} {...SectionItemProps}>
+                <Icon
+                  color={['primary', 'secondary', 'accent'][key % 3]}
+                  icon={section.icon}
+                  {...SectionIconProps}
+                />
+                <Typography {...SectionTextProps}>{section.text}</Typography>
+              </Box>
             ))}
-          </Box>
-        </Fade>
-      </Box>
-      <Card {...MailerCardProps}>
-        <Squares />
-        <Typography {...MailerTitleProps}>{mailer.title}</Typography>
+            <Box {...SocialLinkWrapperProps}>
+              {socialLinks?.map((socialLink, key) => (
+                <Fade left duration={600} key={socialLink.title} distance="10px" delay={100 * key}>
+                  <Link as="a" href={socialLink.href} title={socialLink.title} {...SocialLinkProps}>
+                    <Icon icon={socialLink.icon} />
+                  </Link>
+                </Fade>
+              ))}
+            </Box>
+          </Fade>
+        </Box>
+        <Card {...MailerCardProps}>
+          <Squares />
+          <Typography {...MailerTitleProps}>{mailer.title}</Typography>
 
-        <Formik
-          validationSchema={mailer.validationSchema}
-          onSubmit={mailer.onSubmit}
-          initialValues={mailer.fields.reduce(
-            (acc, field) => ({
-              ...acc,
-              [field.name]: field.initialValue,
-            }),
-            {},
-          )}
-        >
-          <Form method="POST" data-netlify="true" name="contact">
-            <Fade cascade bottom duration={600}>
-              <div>
-                {mailer.fields.map(field => (
-                  <Input key={field.name} {...field} />
-                ))}
-              </div>
-              <Button type="submit" {...MailerButtonProps}>
-                {mailer.cta}
-              </Button>
-            </Fade>
-          </Form>
-        </Formik>
-      </Card>
-    </Container>
-  </Box>
-);
+          <Formik
+            validationSchema={mailer.validationSchema}
+            onSubmit={mailer.onSubmit}
+            initialValues={mailer.fields.reduce(
+              (acc, field) => ({
+                ...acc,
+                [field.name]: field.initialValue,
+              }),
+              {},
+            )}
+          >
+            <Form method="POST" data-netlify="true" name="contact">
+              <Fade cascade bottom duration={600}>
+                <div>
+                  {mailer.fields.map(field => (
+                    <Input key={field.name} {...field} />
+                  ))}
+                </div>
+                <Button type="submit" {...MailerButtonProps}>
+                  {mailer.cta}
+                </Button>
+              </Fade>
+            </Form>
+          </Formik>
+        </Card>
+      </Container>
+    </Box>
+  );
+};
 
 Contact.propTypes = {
   /**

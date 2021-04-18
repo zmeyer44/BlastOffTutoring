@@ -502,7 +502,9 @@ export default {
         fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encode({ 'form-name': 'contact', ...values }),
+          body: Object.keys({ 'form-name': 'contact', ...values })
+            .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+            .join('&'),
         })
           .then(() => {
             alert('Success');
