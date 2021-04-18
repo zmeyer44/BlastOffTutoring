@@ -253,6 +253,7 @@ Features.defaultProps = {
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 24,
+    background: '#F24F28',
   },
   FeatureDetailsProps: {
     display: {

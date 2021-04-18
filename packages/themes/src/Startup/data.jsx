@@ -171,7 +171,7 @@ export default {
   team: {
     title: 'Meet our team',
     text:
-      'We may be small, but we aure are powerful! Our team is dedicated to providing users with the best possbile experience while using our services. We are also looking for summer interns to help out gorwing our company. Click the link below to apply now.',
+      'We may be small, but we are are powerful! Our team is dedicated to providing users with the best possbile experience while using our services. We are also looking for summer interns to help out gorwing our company. Click the link below to apply now.',
     cta: {
       label: 'Join the Team',
       as: Link,
@@ -460,7 +460,7 @@ export default {
     sections: [
       {
         icon: MapMarker,
-        text: textToMultiline`71 Roundtree Drive Plainview,\nNew York 11803\nUnited States`,
+        text: textToMultiline`Based in Long Island, Ny`,
       },
       {
         icon: MobilePhone,
