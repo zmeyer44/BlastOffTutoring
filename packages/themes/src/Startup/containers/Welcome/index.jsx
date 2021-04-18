@@ -14,7 +14,6 @@ const Welcome = ({
   name,
   title,
   text,
-  img,
   actions,
   WrapperProps,
   ContainerProps,
@@ -180,7 +179,7 @@ Welcome.defaultProps = {
   },
   ImageProps: {
     width: '100%',
-    minWidth: {
+    maxWidth: {
       _: 544,
       ml: 400,
       lg: 544,
