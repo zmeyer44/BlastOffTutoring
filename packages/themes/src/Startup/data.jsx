@@ -5,9 +5,9 @@ import { Link } from 'react-scroll';
 import textToMultiline from '@pagerland/common/src/utils/textToMultiline';
 import Img from '@pagerland/common/src/components/Img';
 
-// import Award from '@pagerland/icons/src/line/Award';
-// import Brain from '@pagerland/icons/src/line/Brain';
-// import DNA from '@pagerland/icons/src/line/DNA';
+import Award from '@pagerland/icons/src/line/Award';
+import Brain from '@pagerland/icons/src/line/Brain';
+import Dna from '@pagerland/icons/src/line/Dna';
 import MapMarker from '@pagerland/icons/src/monochrome/MapMarker';
 import MobilePhone from '@pagerland/icons/src/monochrome/MobilePhone';
 import PaperAirplane from '@pagerland/icons/src/monochrome/PaperAirplane';
@@ -583,15 +583,15 @@ export default {
     title: 'Apply for a position',
     sections: [
       {
-        icon: MapMarker,
+        icon: Award,
         text: textToMultiline`We are looking for talented, motivated\nindividuals to join our team\nand start revolutionizing education!`,
       },
       {
-        icon: MapMarker,
+        icon: Brain,
         text: textToMultiline`Let us know what you could offer`,
       },
       {
-        icon: MapMarker,
+        icon: Dna,
         text: 'Writers, coders, business people are all welcome',
       },
     ],
