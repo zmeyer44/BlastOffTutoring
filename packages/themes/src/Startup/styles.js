@@ -9,7 +9,7 @@ export const colors = {
   accent: '#F24F28',
   black: '#252728',
   white: '#FFFFFF',
-  error: '#EB5757',
+  error: '#012466',
   success: '#27AE60',
   shades: {
     primary: ['#ffd800', '#FFEC80', '#FFF6C0', '#FFE240'],

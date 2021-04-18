@@ -5,6 +5,9 @@ import { Link } from 'react-scroll';
 import textToMultiline from '@pagerland/common/src/utils/textToMultiline';
 import Img from '@pagerland/common/src/components/Img';
 
+import Award from '@pagerland/icons/src/line/Award';
+import Brain from '@pagerland/icons/src/line/Brain';
+import DNA from '@pagerland/icons/src/line/DNA';
 import MapMarker from '@pagerland/icons/src/monochrome/MapMarker';
 import MobilePhone from '@pagerland/icons/src/monochrome/MobilePhone';
 import PaperAirplane from '@pagerland/icons/src/monochrome/PaperAirplane';
@@ -65,6 +68,8 @@ const encode = data => {
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
 };
+
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 export default {
   title: 'Blast Off Tutoring',
@@ -175,8 +180,8 @@ export default {
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu magna pharetra sem ullamcorper bibendum quis et mauris. Phasellus tincidunt iaculis porttitor. Sed ut mi varius, gravida nulla eget, bibendum est. Ut auctor nec erat vitae placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
     cta: {
-      label: 'Contact us',
-      href: 'https://blastofftutoring.netlify.app/',
+      label: 'Join the Team',
+      href: 'https://blastofftutoring.netlify.app/apply',
     },
     people: [
       {
@@ -504,7 +509,7 @@ export default {
         comment: Yup.string().required('Required'),
       }),
       // eslint-disable-next-line no-undef
-      onSubmit: (values, { setSubmitting }) => {
+      onSubmit: (values, { setSubmitting, resetForm }) => {
         fetch('/?no-cache=1', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -516,6 +521,7 @@ export default {
           .then(() => {
             alert('Success!');
             setSubmitting(false);
+            resetForm({});
           })
           .catch(error => {
             alert('Error: Please Try Again!');
@@ -525,7 +531,7 @@ export default {
       fields: [
         {
           name: 'name',
-          label: 'First name',
+          label: 'Full name',
           placeholder: 'ie. John Doe',
           initialValue: '',
         },
@@ -565,4 +571,110 @@ export default {
     ],
   },
   copyright: '© 2021 Blast Off Tutoring',
+  navbaralt: {
+    actions: [
+      {
+        href: 'https://www.blastoffeducation.com/',
+        label: 'Return home',
+      },
+    ],
+  },
+  apply: {
+    title: 'Apply for a position',
+    sections: [
+      {
+        icon: Award,
+        text: textToMultiline`We are looking for talented, motivated\nindividuals to join our team\nand start revolutionizing education!`,
+      },
+      {
+        icon: Brain,
+        text: textToMultiline`Let us know what you could offer`,
+      },
+      {
+        icon: DNA,
+        text: 'Writers, coders, business people are all welcome',
+      },
+    ],
+    socialLinks: [
+      {
+        icon: FacebookF,
+        href: 'https://facebook.com',
+        title: 'Facebook',
+      },
+      {
+        icon: Instagram,
+        href: 'https://www.instagram.com/blastofftutoring/',
+        title: 'Instagram',
+      },
+      {
+        icon: Twitter,
+        href: 'https://twitter.com',
+        title: 'Twitter',
+      },
+      {
+        icon: Linkedin,
+        href: 'https://linkedin.com',
+        title: 'Linkedin',
+      },
+    ],
+    mailer: {
+      title: 'Application',
+      cta: 'Apply now',
+      validationSchema: Yup.object({
+        name: Yup.string().max(20, 'Must be 20 characters or less').required('Required'),
+        email: Yup.string().email('Must be an email').required('Required'),
+        phone: Yup.string().matches(phoneRegExp, 'Phone number is not valid').required('Required'),
+        information: Yup.string().required('Required'),
+      }),
+      // eslint-disable-next-line no-undef
+      onSubmit: (values, { setSubmitting, resetForm }) => {
+        fetch('/?no-cache=1', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'application',
+            ...values,
+          }),
+        })
+          .then(() => {
+            alert('Success!');
+            setSubmitting(false);
+            resetForm({});
+          })
+          .catch(error => {
+            alert('Error: Please Try Again!');
+            setSubmitting(false);
+          });
+      },
+      fields: [
+        {
+          name: 'name',
+          label: 'Full name',
+          placeholder: 'ie. John Doe',
+          initialValue: '',
+        },
+        {
+          name: 'email',
+          label: 'E-mail',
+          placeholder: 'i.e. john.doe@email.com',
+          type: 'email',
+          initialValue: '',
+        },
+        {
+          name: 'phone',
+          label: 'Phone Number',
+          type: 'tel',
+          placeholder: 'ie. 555-678-123',
+          initialValue: '',
+        },
+        {
+          name: 'information',
+          label: 'Information',
+          placeholder: 'Tell us a bit about yourself...',
+          multiline: true,
+          initialValue: '',
+        },
+      ],
+    },
+  },
 };
