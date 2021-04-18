@@ -7,7 +7,6 @@ import Box from '@pagerland/common/src/components/Box';
 import Typography from '@pagerland/common/src/components/Typography';
 import Container from '@pagerland/common/src/components/Container';
 import Icon from '@pagerland/common/src/components/Icon';
-import Link from '@pagerland/common/src/components/Link';
 
 import Card from '@pagerland/common/src/components/Card';
 import { Form, Formik } from 'formik';

@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Box from '@pagerland/common/src/components/Box';
 import Fade from 'react-reveal/Fade';
 import Typography from '@pagerland/common/src/components/Typography';
 import Button from '@pagerland/common/src/components/Button';
-import circle from '../../assets/circle.png';
 import data from '../../data';
 
-import { ContainerWithBackground, RoundedImage } from './styled.components';
+import Img from 'gatsby-image';
+import { ContainerWithBackground } from './styled.components';
 import Squares from './Squares';
 
 const Welcome = ({
@@ -25,6 +24,7 @@ const Welcome = ({
   ActionButtonsProps,
   ImageWrapperProps,
   ImageProps,
+  fluid,
 }) => (
   <Box name={name} {...WrapperProps}>
     <ContainerWithBackground {...ContainerProps}>
@@ -42,14 +42,9 @@ const Welcome = ({
         </Fade>
       </Box>
       <Box {...ImageWrapperProps}>
-        {/* {avatars.map((avatar, key) => (
-          <Fade top cascade duration={600} key={key} delay={key * 50}>
-            <Avatar {...avatar} {...AvatarsProps[key]} />
-          </Fade>
-        ))} */}
         <Squares />
         <Fade cascade duration={600}>
-          <RoundedImage {...ImageProps} {...img} />
+          <Img fluid={fluid} {...ImageProps} />
         </Fade>
       </Box>
     </ContainerWithBackground>
@@ -177,10 +172,15 @@ Welcome.defaultProps = {
       _: 'hidden',
       md: 'visible',
     },
+    minWidth: {
+      _: 544,
+      ml: 400,
+      lg: 544,
+    },
   },
   ImageProps: {
     width: '100%',
-    maxWidth: {
+    minWidth: {
       _: 544,
       ml: 400,
       lg: 544,

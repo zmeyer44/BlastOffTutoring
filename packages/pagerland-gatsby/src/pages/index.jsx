@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Sticky from 'react-sticky-el';
-
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Helmet } from 'react-helmet';
 
 import Theme, { theme } from '@pagerland/themes/src/Startup';
@@ -23,12 +24,12 @@ import preview from '@pagerland/themes/src/Startup/assets/preview.png';
 
 import SEO from '../components/SEO';
 
-const Startup = ({ url }) => (
+const Startup = props => (
   <Theme>
     <Helmet>
       <link href={theme.typography.googleFont} rel="stylesheet" />
       <meta name="theme-color" content={theme.colors.primary} />
-      <meta property="og:image" content={`${url}${preview}`} />
+      <meta property="og:image" content={`${props.url}${preview}`} />
     </Helmet>
     <SEO title="Home" />
 
@@ -36,7 +37,9 @@ const Startup = ({ url }) => (
       <Navbar />
     </Sticky>
 
-    <Welcome name="" />
+    <Welcome name="" fluid={props.data.imageOne.childImageSharp.fluid}>
+      {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
+    </Welcome>
     <Services name="services" />
     <About name="about" />
     <Team name="team" />
@@ -59,3 +62,24 @@ Startup.defaultProps = {
 };
 
 export default Startup;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "hero.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          base64
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+          originalImg
+          originalName
+        }
+      }
+    }
+  }
+`;
