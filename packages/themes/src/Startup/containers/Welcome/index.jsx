@@ -171,11 +171,13 @@ Welcome.defaultProps = {
       _: 'hidden',
       md: 'visible',
     },
-    minWidth: {
+    maxWidth: {
       _: 544,
       ml: 400,
       lg: 544,
     },
+
+    width: '100%',
   },
   ImageProps: {
     width: '100%',
