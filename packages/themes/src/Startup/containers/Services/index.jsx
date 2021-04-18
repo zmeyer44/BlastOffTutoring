@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-scroll';
+
+import { smoothLinkProps } from '@pagerland/common/src/utils';
 import Box from '@pagerland/common/src/components/Box';
 import Fade from 'react-reveal/Fade';
 import Typography from '@pagerland/common/src/components/Typography';
@@ -199,7 +202,8 @@ Services.defaultProps = {
     textAlign: 'center',
     mx: 'auto',
     variant: 'secondary',
-    as: 'a',
+    as: Link,
+    ...smoothLinkProps,
   },
   ...data.services,
 };

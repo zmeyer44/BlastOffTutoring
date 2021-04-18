@@ -73,9 +73,9 @@ const Team = ({
         ))}
       </Grid>
       <Fade top cascade duration={600}>
-        <Link href={cta.url}>
-          <Button {...CtaProps}>{cta.label}</Button>
-        </Link>
+        <Button {...CtaProps} {...cta}>
+          {cta.label}
+        </Button>
       </Fade>
     </Container>
   </Box>
@@ -245,7 +245,6 @@ Team.defaultProps = {
     textAlign: 'center',
     mx: 'auto',
     variant: 'secondary',
-    as: 'a',
   },
   LinkedinIconProps: {
     mx: 2,

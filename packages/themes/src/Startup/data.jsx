@@ -1,16 +1,18 @@
 import React from 'react';
 import { smoothLinkProps } from '@pagerland/common/src/utils';
-import { Link } from 'react-scroll';
+import { Link } from 'gatsby';
 
 import textToMultiline from '@pagerland/common/src/utils/textToMultiline';
 import Img from '@pagerland/common/src/components/Img';
 
-import Award from '@pagerland/icons/src/line/Award';
-import Brain from '@pagerland/icons/src/line/Brain';
-import Dna from '@pagerland/icons/src/line/Dna';
 import MapMarker from '@pagerland/icons/src/monochrome/MapMarker';
 import MobilePhone from '@pagerland/icons/src/monochrome/MobilePhone';
 import PaperAirplane from '@pagerland/icons/src/monochrome/PaperAirplane';
+import Award from '@pagerland/icons/src/line/Award';
+import Brain from '@pagerland/icons/src/line/Brain';
+import Dna from '@pagerland/icons/src/line/Dna';
+import Heart from '@pagerland/icons/src/line/Heart';
+import Globe from '@pagerland/icons/src/line/Globe';
 
 import FacebookF from '@pagerland/icons/src/monochrome/FacebookF';
 import Instagram from '@pagerland/icons/src/monochrome/Instagram';
@@ -29,16 +31,6 @@ import Avatar2 from './assets/avatars/mitchell.jpg';
 import Avatar22x from './assets/avatars/mitchell@2x.jpg';
 import Avatar3 from './assets/avatars/danielle.jpg';
 import Avatar32x from './assets/avatars/danielle@2x.jpg';
-import Avatar4 from './assets/avatars/avatar-4.jpg';
-import Avatar42x from './assets/avatars/avatar-4@2x.jpg';
-import Avatar5 from './assets/avatars/avatar-5.jpg';
-import Avatar52x from './assets/avatars/avatar-5@2x.jpg';
-import Avatar6 from './assets/avatars/avatar-6.jpg';
-import Avatar62x from './assets/avatars/avatar-6@2x.jpg';
-import Avatar7 from './assets/avatars/avatar-7.jpg';
-import Avatar72x from './assets/avatars/avatar-7@2x.jpg';
-import Avatar8 from './assets/avatars/avatar-8.jpg';
-import Avatar82x from './assets/avatars/avatar-8@2x.jpg';
 
 import features1 from './assets/feature1.png';
 import features2 from './assets/feature2.png';
@@ -159,7 +151,7 @@ export default {
     ],
     cta: {
       label: 'Learn More',
-      href: 'https://blastofftutoring.netlify.app/',
+      to: 'features',
     },
   },
   about: {
@@ -169,7 +161,8 @@ export default {
     },
     title: 'About us',
     text:
-      'Nunc nec ultricies quam. Integer iaculis erat id leo consequat ultricies. Pellentesque mattis ultricies rhoncus. Maecenas vehicula efficitur sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam laoreet at erat sit amet efficitur. Nam interdum tellus molestie, elementum felis in, consectetur ipsum. Aenean justo dolor, pretium nec dui eget, vulputate ullamcorper dolor.',
+      "We were founded brothers Zachary and Mitchell Meyer when Mitchell couldn't find a way to fufill his community service requierments for National Honors Society. While struggling to find students to tutor, he thought that there must be a better way. After approaching Zach with his idea, they got to work building what is now Blast Off Tutoring. We strive to provide students free tutoring sessions from their peers while giving community service opportunities for those looking to bolster their résumé.",
+
     cta: {
       label: 'Learn more about us',
       href: 'https://blastofftutoring.com/about',
@@ -178,10 +171,11 @@ export default {
   team: {
     title: 'Meet our team',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu magna pharetra sem ullamcorper bibendum quis et mauris. Phasellus tincidunt iaculis porttitor. Sed ut mi varius, gravida nulla eget, bibendum est. Ut auctor nec erat vitae placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+      'We may be small, but we aure are powerful! Our team is dedicated to providing users with the best possbile experience while using our services. We are also looking for summer interns to help out gorwing our company. Click the link below to apply now.',
     cta: {
       label: 'Join the Team',
-      url: '/apply',
+      as: Link,
+      to: '/apply',
     },
     people: [
       {
@@ -293,7 +287,7 @@ export default {
   features: {
     title: 'Discover what makes Blast Off so great',
     text:
-      'Donec turpis justo, egestas at nisl nec, ullamcorper rutrum justo. Morbi sed blandit justo, ac molestie diam. Sed sapien augue, vestibulum id nisl a, gravida consectetur lectus. Duis vehicula suscipit consectetur.',
+      'Using our platform is simple. First browse our selection of tutors fo find who is right for you, start messageing them to schedule a time to meet, and them use our virtual lesson space to get the most from your lesson.',
     features: [
       {
         title: 'Find a Tutor',
@@ -345,8 +339,8 @@ export default {
           button: {
             text: 'Buy basic plan',
             ButtonProps: {
-              as: 'a',
-              href: 'https://mypags.app',
+              as: Link,
+              to: '/purchase',
             },
           },
         },
@@ -376,8 +370,8 @@ export default {
           button: {
             text: 'Buy professional plan',
             ButtonProps: {
-              as: 'a',
-              href: 'https://mypags.app',
+              as: Link,
+              to: '/purchase',
             },
           },
         },
@@ -407,8 +401,8 @@ export default {
           button: {
             text: 'Buy ultimate plan',
             ButtonProps: {
-              as: 'a',
-              href: 'https://mypags.app',
+              as: Link,
+              to: '/purchase',
             },
           },
         },
@@ -425,7 +419,7 @@ export default {
         date: 'Today',
         title: "Online learning is here to stay, so it's time for you to adjust",
         text:
-          'Nullam sed tellus nec arcu mollis iaculis. Aliquam eget velit a libero suscipit tempor eget at leo. Vestibulum commodo tempor gravida. Donec dictum nunc at lorem euismod, et faucibus ante consectetur. Nullam porttitor eros in ligula posuere dignissim.',
+          'The Corona Virus has changed the way that we look at education. Hybrid learning environments will force students to overcome some new challenges that they face. Technology is also continuing to play a larger role in education aswell... ',
       },
       {
         url: '#',
@@ -470,11 +464,11 @@ export default {
       },
       {
         icon: MobilePhone,
-        text: '(516) 555-0114',
+        text: '(516) 477-3745',
       },
       {
         icon: PaperAirplane,
-        text: 'support@Blastofftutoring.com',
+        text: 'Support@Blastofftutoring.com',
       },
     ],
     socialLinks: [
@@ -574,7 +568,8 @@ export default {
   navbaralt: {
     actions: [
       {
-        url: '/',
+        as: Link,
+        to: '/',
         label: 'Return home',
       },
     ],
@@ -671,6 +666,91 @@ export default {
           name: 'information',
           label: 'Information',
           placeholder: 'Tell us a bit about yourself...',
+          multiline: true,
+          initialValue: '',
+        },
+      ],
+    },
+  },
+  purchase: {
+    title: 'Interested in our program?',
+    sections: [
+      {
+        icon: Heart,
+        text: textToMultiline`Our platform will help your students thrive\nwe are commited to finding the best\nplan to suit your needs`,
+      },
+      {
+        icon: Brain,
+        text: textToMultiline`Let us know if you have any questions or concerns`,
+      },
+      {
+        icon: Globe,
+        text: "We are here to help, so don't hesitate to reach out",
+      },
+    ],
+
+    mailer: {
+      title: 'Interest Form',
+      cta: 'Send message',
+      validationSchema: Yup.object({
+        name: Yup.string().max(20, 'Must be 20 characters or less').required('Required'),
+        school: Yup.string().required('Required'),
+        email: Yup.string().email('Must be an email').required('Required'),
+        phone: Yup.string().matches(phoneRegExp, 'Phone number is not valid').required('Required'),
+        information: Yup.string().required('Required'),
+      }),
+      // eslint-disable-next-line no-undef
+      onSubmit: (values, { setSubmitting, resetForm }) => {
+        fetch('/?no-cache=1', {
+          method: 'POST',
+          headers: { 'Content-Type': 'purchase/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'purchase',
+            ...values,
+          }),
+        })
+          .then(() => {
+            alert('Success!');
+            setSubmitting(false);
+            resetForm({});
+          })
+          .catch(error => {
+            alert('Error: Please Try Again!');
+            setSubmitting(false);
+          });
+      },
+      fields: [
+        {
+          name: 'name',
+          label: 'Full name',
+          placeholder: 'ie. John Doe',
+          initialValue: '',
+        },
+        {
+          name: 'school',
+          label: 'School Name',
+          placeholder: 'ie. North Central School',
+          initialValue: '',
+        },
+        {
+          name: 'email',
+          label: 'E-mail',
+          placeholder: 'i.e. john.doe@email.com',
+          type: 'email',
+          initialValue: '',
+        },
+        {
+          name: 'phone',
+          label: 'Phone Number',
+          type: 'tel',
+          placeholder: 'ie. 555-678-123',
+          initialValue: '',
+        },
+        {
+          name: 'information',
+          label: 'Information',
+          placeholder:
+            'Which plan are you interested in and are there any accomodations your school may need?',
           multiline: true,
           initialValue: '',
         },

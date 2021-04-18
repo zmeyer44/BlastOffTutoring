@@ -1,0 +1,42 @@
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  bottom: -100px;
+  right: 20px;
+  color: #fff;
+  background-color: #012466;
+  z-index: 4;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  font-size: 40px;
+  transition: 0.9s;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+  outline: none;
+}
+.go-top.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
+}
+
+.go-top:hover {
+  background-color: #f24f28;
+  color: #fff;
+  transition: 0.5s;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transform: translateY(-5px);
+}
+.go-top .icon {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

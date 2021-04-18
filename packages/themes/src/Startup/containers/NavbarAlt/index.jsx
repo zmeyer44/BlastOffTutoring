@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Alink from '@pagerland/common/src/components/Link';
 
 import { Link } from 'react-scroll';
 import { smoothLinkProps } from '@pagerland/common/src/utils';
@@ -33,12 +32,10 @@ const NavbarAlt = ({
     <>
       {actions && (
         <Box {...ActionsWrapperProps}>
-          {actions.map(({ label, url }, i) => (
-            <Alink href={url}>
-              <Button {...ActionProps} key={i}>
-                {label}
-              </Button>
-            </Alink>
+          {actions.map(({ label, ...props }, i) => (
+            <Button {...ActionProps} {...props} key={i}>
+              {label}
+            </Button>
           ))}
         </Box>
       )}
@@ -206,7 +203,6 @@ NavbarAlt.defaultProps = {
   },
   ActionProps: {
     variant: 'accent',
-    as: 'a',
   },
   ToggleButtonProps: {
     buttonWidth: 24,

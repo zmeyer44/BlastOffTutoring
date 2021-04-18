@@ -5,57 +5,37 @@ import Sticky from 'react-sticky-el';
 import { Helmet } from 'react-helmet';
 
 import Theme, { theme } from '@pagerland/themes/src/Startup';
-import {
-  Navbar,
-  Copyright,
-  Welcome,
-  Services,
-  About,
-  Team,
-  Features,
-  Pricing,
-  Blog,
-  Contact,
-  ScrollUp,
-} from '@pagerland/themes/src/Startup/containers';
+import { NavbarAlt, Copyright, Purchase } from '@pagerland/themes/src/Startup/containers';
 
 import preview from '@pagerland/themes/src/Startup/assets/preview.png';
 
 import SEO from '../components/SEO';
 
-const Startup = ({ url }) => (
+const PurchasePage = ({ url }) => (
   <Theme>
     <Helmet>
       <link href={theme.typography.googleFont} rel="stylesheet" />
       <meta name="theme-color" content={theme.colors.primary} />
       <meta property="og:image" content={`${url}${preview}`} />
     </Helmet>
-    <SEO title="Home" />
+    <SEO title="Purchase" />
 
     <Sticky style={{ zIndex: 999, position: 'relative' }}>
-      <Navbar />
+      <NavbarAlt />
     </Sticky>
 
-    <Welcome name="" />
-    <Services name="services" />
-    <About name="about" />
-    <Team name="team" />
-    <Features name="features" />
-    <Pricing name="pricing" />
-    <Blog name="blog" />
-    <Contact name="contact" />
-    <ScrollUp scrollStepInPx="100" delayInMs="10.50" />
+    <Purchase name="purchase" />
 
     <Copyright />
   </Theme>
 );
 
-Startup.propTypes = {
+PurchasePage.propTypes = {
   url: PropTypes.string,
 };
 
-Startup.defaultProps = {
+PurchasePage.defaultProps = {
   url: 'https://pager.land/gatsby/',
 };
 
-export default Startup;
+export default PurchasePage;

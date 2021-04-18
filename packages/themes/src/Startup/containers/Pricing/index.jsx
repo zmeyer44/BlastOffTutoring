@@ -76,9 +76,7 @@ const Pricing = ({
                   </Typography>
                   <Typography {...CardPeriodProps} {...sections[i]?.CardPeriodProps}>
                     {section.price.split('.')[1]}
-                    <br />
-                    /
-                    {section.period}
+                    <br />/{section.period}
                   </Typography>
                 </Box>
 
@@ -95,8 +93,7 @@ const Pricing = ({
                         {...sections[i]?.CardListItemPrefixProps}
                       >
                         {feature.prefix}
-                      </Typography>
-                      {' '}
+                      </Typography>{' '}
                       {feature.text}
                     </List.Item>
                   ))}
