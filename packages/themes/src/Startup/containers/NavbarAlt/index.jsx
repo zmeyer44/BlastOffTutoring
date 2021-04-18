@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link as gatsbyLink } from 'gatsby';
+import Alink from '@pagerland/common/src/components/Link';
 
 import { Link } from 'react-scroll';
 import { smoothLinkProps } from '@pagerland/common/src/utils';
 
 import Container from '@pagerland/common/src/components/Container';
 import Box from '@pagerland/common/src/components/Box';
-import List from '@pagerland/common/src/components/List';
 import Button from '@pagerland/common/src/components/Button';
 import NavbarWrapper from '@pagerland/common/src/components/Navbar';
 
@@ -34,10 +33,12 @@ const NavbarAlt = ({
     <>
       {actions && (
         <Box {...ActionsWrapperProps}>
-          {actions.map(({ label, ...link }, i) => (
-            <Button {...ActionProps} onClick={onClick} {...link} key={i}>
-              {label}
-            </Button>
+          {actions.map(({ label, url }, i) => (
+            <Alink href={url}>
+              <Button {...ActionProps} key={i}>
+                {label}
+              </Button>
+            </Alink>
           ))}
         </Box>
       )}

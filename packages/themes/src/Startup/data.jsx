@@ -171,7 +171,7 @@ export default {
     text:
       'Nunc nec ultricies quam. Integer iaculis erat id leo consequat ultricies. Pellentesque mattis ultricies rhoncus. Maecenas vehicula efficitur sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam laoreet at erat sit amet efficitur. Nam interdum tellus molestie, elementum felis in, consectetur ipsum. Aenean justo dolor, pretium nec dui eget, vulputate ullamcorper dolor.',
     cta: {
-      label: 'Learn more bout us',
+      label: 'Learn more about us',
       href: 'https://blastofftutoring.com/about',
     },
   },
@@ -181,7 +181,7 @@ export default {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu magna pharetra sem ullamcorper bibendum quis et mauris. Phasellus tincidunt iaculis porttitor. Sed ut mi varius, gravida nulla eget, bibendum est. Ut auctor nec erat vitae placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
     cta: {
       label: 'Join the Team',
-      href: 'https://blastofftutoring.netlify.app/apply',
+      url: '/apply',
     },
     people: [
       {
@@ -574,7 +574,7 @@ export default {
   navbaralt: {
     actions: [
       {
-        href: 'https://www.blastoffeducation.com/',
+        url: '/',
         label: 'Return home',
       },
     ],

@@ -73,9 +73,9 @@ const Team = ({
         ))}
       </Grid>
       <Fade top cascade duration={600}>
-        <Button {...CtaProps} {...cta}>
-          {cta.label}
-        </Button>
+        <Link href={cta.url}>
+          <Button {...CtaProps}>{cta.label}</Button>
+        </Link>
       </Fade>
     </Container>
   </Box>
