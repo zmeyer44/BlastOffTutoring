@@ -68,7 +68,7 @@ const Purchase = ({
             )}
             render={({ isSubmitting, handleSubmit, handleReset }) => (
               <Form
-                name="application"
+                name="purchase"
                 onSubmit={handleSubmit}
                 onReset={handleReset}
                 data-netlify="true"
