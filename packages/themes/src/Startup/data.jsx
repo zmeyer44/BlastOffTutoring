@@ -703,7 +703,7 @@ export default {
       onSubmit: (values, { setSubmitting, resetForm }) => {
         fetch('/?no-cache=1', {
           method: 'POST',
-          headers: { 'Content-Type': 'purchase/x-www-form-urlencoded' },
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
             'form-name': 'purchase',
             ...values,
