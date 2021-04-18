@@ -498,7 +498,21 @@ export default {
         comment: Yup.string().required('Required'),
       }),
       // eslint-disable-next-line no-undef
-      // onSubmit: values => window.alert(`Form sent with values ${JSON.stringify(values)}`),
+      onSubmit: (values, actions) => {
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({ 'form-name': 'contact', ...values }),
+        })
+          .then(() => {
+            alert('Success');
+            actions.resetForm();
+          })
+          .catch(() => {
+            alert('Error');
+          })
+          .finally(() => actions.setSubmitting(false));
+      },
       fields: [
         {
           name: 'name',

@@ -69,7 +69,7 @@ const Contact = ({
 
         <Formik
           validationSchema={mailer.validationSchema}
-          // onSubmit={mailer.onSubmit}
+          onSubmit={mailer.onSubmit}
           initialValues={mailer.fields.reduce(
             (acc, field) => ({
               ...acc,
