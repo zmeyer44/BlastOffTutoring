@@ -60,6 +60,12 @@ import Article42x from './assets/articles/article-4@2x.jpg';
 import Article5 from './assets/articles/article-5.jpg';
 import Article52x from './assets/articles/article-5@2x.jpg';
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 export default {
   title: 'Blast Off Tutoring',
   navbar: {
@@ -498,22 +504,23 @@ export default {
         comment: Yup.string().required('Required'),
       }),
       // eslint-disable-next-line no-undef
-      onSubmit: (values, actions) => {
-        fetch('/', {
+      onSubmit: (values, { setSubmitting }) => {
+        fetch('/?no-cache=1', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: Object.keys({ 'form-name': 'contact', ...values })
-            .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-            .join('&'),
+          body: encode({
+            'form-name': 'contact',
+            ...values,
+          }),
         })
           .then(() => {
-            alert('Success');
-            actions.resetForm();
+            alert('Success!');
+            setSubmitting(false);
           })
-          .catch(() => {
-            alert('Error');
-          })
-          .finally(() => actions.setSubmitting(false));
+          .catch(error => {
+            alert('Error: Please Try Again!');
+            setSubmitting(false);
+          });
       },
       fields: [
         {

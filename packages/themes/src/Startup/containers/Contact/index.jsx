@@ -78,20 +78,32 @@ const Contact = ({
               }),
               {},
             )}
-          >
-            <Form method="POST" data-netlify="true" name="contact">
-              <Fade cascade bottom duration={600}>
-                <div>
-                  {mailer.fields.map(field => (
-                    <Input key={field.name} {...field} />
-                  ))}
-                </div>
-                <Button type="submit" {...MailerButtonProps}>
-                  {mailer.cta}
-                </Button>
-              </Fade>
-            </Form>
-          </Formik>
+            render={({ isSubmitting, handleSubmit, handleReset }) => (
+              <Form
+                name="contact"
+                onSubmit={handleSubmit}
+                onReset={handleReset}
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
+                <Fade cascade bottom duration={600}>
+                  <div>
+                    {mailer.fields.map(field => (
+                      <Input key={field.name} {...field} />
+                    ))}
+                  </div>
+                  <Button
+                    type="submit"
+                    name="submit"
+                    disabled={isSubmitting}
+                    {...MailerButtonProps}
+                  >
+                    {mailer.cta}
+                  </Button>
+                </Fade>
+              </Form>
+            )}
+          />
         </Card>
       </Container>
     </Box>
