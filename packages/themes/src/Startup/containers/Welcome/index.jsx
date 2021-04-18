@@ -163,9 +163,14 @@ Welcome.defaultProps = {
   ImageWrapperProps: {
     zIndex: 4,
     position: 'relative',
-    my: {
+    mb: {
       _: 90,
       lg: 0,
+    },
+    mt: {
+      _: 25,
+      md: 40,
+      ml: 80,
     },
     overflow: {
       _: 'hidden',
