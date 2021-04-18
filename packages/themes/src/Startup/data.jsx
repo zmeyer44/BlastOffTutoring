@@ -498,7 +498,7 @@ export default {
         comment: Yup.string().required('Required'),
       }),
       // eslint-disable-next-line no-undef
-      onSubmit: values => window.alert(`Form sent with values ${JSON.stringify(values)}`),
+      // onSubmit: values => window.alert(`Form sent with values ${JSON.stringify(values)}`),
       fields: [
         {
           name: 'name',
