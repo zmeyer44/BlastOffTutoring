@@ -161,7 +161,7 @@ export default {
     },
     title: 'About us',
     text:
-      "We were founded brothers Zachary and Mitchell Meyer when Mitchell couldn't find a way to fufill his community service requierments for National Honors Society. While struggling to find students to tutor, he thought that there must be a better way. After approaching Zach with his idea, they got to work building what is now Blast Off Tutoring. We strive to provide students free tutoring sessions from their peers while giving community service opportunities for those looking to bolster their résumé.",
+      "We were founded by brothers Zachary and Mitchell Meyer when Mitchell couldn't find a way to fulfill his community service requirements for National Honors Society. While struggling to find students to tutor, he thought that there must be a better way. After approaching Zach with his idea, they got to work building what is now Blast Off Tutoring. We strive to provide students free tutoring sessions from their peers while giving community service opportunities for those looking to bolster their résumé.",
 
     cta: {
       label: 'Learn more about us',
@@ -171,7 +171,7 @@ export default {
   team: {
     title: 'Meet our team',
     text:
-      'We may be small, but we are are powerful! Our team is dedicated to providing users with the best possbile experience while using our services. We are also looking for summer interns to help out gorwing our company. Click the link below to apply now.',
+      'We may be small, but we are powerful! Our team is dedicated to providing users with the best possible experience while using our services. We are also looking for summer interns to help out growing our company. Click the link below to apply now.',
     cta: {
       label: 'Join the Team',
       as: Link,
@@ -287,7 +287,7 @@ export default {
   features: {
     title: 'Discover what makes Blast Off so great',
     text:
-      'Using our platform is simple. First browse our selection of tutors fo find who is right for you, start messageing them to schedule a time to meet, and them use our virtual lesson space to get the most from your lesson.',
+      'Using our platform is simple. First browse our library of tutors to find who is right for you, start messaging them to schedule a time to meet, and then use our virtual lesson space to get the most from your lesson.',
     features: [
       {
         title: 'Find a Tutor',
