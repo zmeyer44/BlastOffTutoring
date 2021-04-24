@@ -148,7 +148,7 @@ Welcome.defaultProps = {
   },
   TitleProps: {
     as: 'h1',
-    variant: 'h1',
+    variant: 'title',
     mb: 4,
     mx: 'auto',
     color: 'white',

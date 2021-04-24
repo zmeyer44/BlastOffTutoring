@@ -87,14 +87,14 @@ export default {
         to: 'features',
         label: 'Features',
       },
-      {
-        to: 'pricing',
-        label: 'Pricing',
-      },
-      {
-        to: 'blog',
-        label: 'News',
-      },
+      // {
+      //   to: 'pricing',
+      //   label: 'Pricing',
+      // },
+      // {
+      //   to: 'blog',
+      //   label: 'News',
+      // },
       {
         to: 'contact',
         label: 'Contact',
@@ -146,7 +146,7 @@ export default {
         icon: VideoChat,
         title: 'Schedule a Meeting',
         text:
-          'Once you faound the right tutor for you, start chatting and set up a time to meet though our online video chat.',
+          'Once you found the right tutor for you, start chatting and set up a time to meet though our online video chat.',
       },
     ],
     cta: {

@@ -18,6 +18,7 @@ export default {
     }
   `,
   variants: {
+    title: { fontSize: 50, fontWeight: 'bold', lineHeight: 1.3 },
     h1: {
       fontSize: 40,
       fontWeight: 'bold',

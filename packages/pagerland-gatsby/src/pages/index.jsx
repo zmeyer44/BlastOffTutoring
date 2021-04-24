@@ -44,8 +44,8 @@ const Startup = props => (
     <About name="about" />
     <Team name="team" />
     <Features name="features" />
-    <Pricing name="pricing" />
-    <Blog name="blog" />
+    {/* <Pricing name="pricing" />
+    <Blog name="blog" /> */}
     <Contact name="contact" />
     <ScrollUp scrollStepInPx="100" delayInMs="10.50" />
 
