@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Blast Off Tutoring',
     description:
-      'We offer free peer-2-peer tutoring for students of all ages. Tutors will receive community service credit which can be used for honors societies of college applications.',
+      'We offer free Peer-to-Peer tutoring for students of all ages. Tutors will receive community service credit which can be used for honors societies of college applications.',
     author: 'Blast Off Team',
   },
   pathPrefix: process.env.GATSBY_APP_DIR || '',
@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        trackingId: "G-P7JTH3BWWR",
         head: false,
       },
     },
