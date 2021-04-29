@@ -111,7 +111,7 @@ export default {
   welcome: {
     title: 'Free Peer To Peer Tutoring',
     text:
-      'We connect highschool students looking for community service hours with students in need of a tutor.',
+      'We connect high school students looking for community service hours with students in need of a tutor.',
     actions: [
       {
         label: 'Get Started',
