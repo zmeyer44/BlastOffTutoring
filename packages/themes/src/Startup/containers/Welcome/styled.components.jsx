@@ -10,7 +10,7 @@ export const ContainerWithBackground = styled(Container)`
     width: 100vw;
     height: 950px;
     position: absolute;
-    top: -200px;
+    top: -230px;
     z-index: -1;
     border-radius: 2rem;
     transform: none;

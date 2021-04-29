@@ -41,9 +41,9 @@ const Startup = props => (
       {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
     </Welcome>
     <Services name="services" />
-    <About name="about" />
-    <Team name="team" />
     <Features name="features" />
+    <Team name="team" />
+    <About name="about" />
     {/* <Pricing name="pricing" />
     <Blog name="blog" /> */}
     <Contact name="contact" />
@@ -65,7 +65,7 @@ export default Startup;
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "hero.png" }) {
+    imageOne: file(relativePath: { eq: "hero2.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           base64

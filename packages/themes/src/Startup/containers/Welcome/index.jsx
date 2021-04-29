@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ModalVideo from 'react-modal-video';
 import Box from '@pagerland/common/src/components/Box';
 import Fade from 'react-reveal/Fade';
 import Typography from '@pagerland/common/src/components/Typography';
 import Button from '@pagerland/common/src/components/Button';
 import data from '../../data';
-
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { ContainerWithBackground } from './styled.components';
 import Squares from './Squares';
+import './style.css';
+import './modal.css';
 
 const Welcome = ({
   name,
@@ -24,31 +27,74 @@ const Welcome = ({
   ImageWrapperProps,
   ImageProps,
   fluid,
-}) => (
-  <Box name={name} {...WrapperProps}>
-    <ContainerWithBackground {...ContainerProps}>
-      <Box {...CaptionProps}>
-        <Fade bottom cascade duration={600}>
-          <Typography {...TitleProps}>{title}</Typography>
-          <Typography {...TextProps}>{text}</Typography>
-          <Box {...ActionButtonsProps}>
-            {actions.map(({ label, ...props }, key) => (
-              <Button {...props} key={key}>
-                {label}
-              </Button>
-            ))}
-          </Box>
-        </Fade>
-      </Box>
-      <Box {...ImageWrapperProps}>
-        <Squares />
-        <Fade cascade duration={600}>
-          <Img fluid={fluid} {...ImageProps} />
-        </Fade>
-      </Box>
-    </ContainerWithBackground>
-  </Box>
-);
+}) => {
+  const [isOpen, setIsOpen] = React.useState(true);
+  const openModal = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <Box name={name} {...WrapperProps}>
+      <ModalVideo
+        channel="youtube"
+        isOpen={!isOpen}
+        videoId="FvWvZOf2alk"
+        onClose={() => setIsOpen(!isOpen)}
+      />
+      <ContainerWithBackground {...ContainerProps}>
+        {/* <Squares /> */}
+        <Box {...ImageWrapperProps}>
+          <Fade cascade duration={600}>
+            <Img fluid={fluid} {...ImageProps} className="shadow" />
+          </Fade>
+        </Box>
+        <Box {...CaptionProps}>
+          <Fade bottom cascade duration={600}>
+            <h4>Advanced Platform</h4>
+            <Typography {...TitleProps}>{title}</Typography>
+            <Typography {...TextProps}>{text}</Typography>
+            <Box {...ActionButtonsProps}>
+              {actions.map(({ label, ...props }, key) => (
+                <Button {...props} key={key}>
+                  {label}
+                </Button>
+              ))}
+              <Link
+                to="#"
+                onClick={e => {
+                  e.preventDefault();
+                  openModal();
+                }}
+                className="video-btn popup-youtube"
+              >
+                <svg
+                  version="1.1"
+                  id="play"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="50px"
+                  width="50px"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    class="stroke-solid"
+                    fill="none"
+                    stroke="#ffffff"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+    C97.3,23.7,75.7,2.3,49.9,2.5"
+                  />
+                  <path
+                    class="icon"
+                    fill="#ffffff"
+                    d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"
+                  />
+                </svg> <span className="play-text">Watch Video</span>
+              </Link>
+            </Box>
+          </Fade>
+        </Box>
+      </ContainerWithBackground>
+    </Box>
+  );
+};
 
 Welcome.propTypes = {
   /**
@@ -123,28 +169,42 @@ Welcome.defaultProps = {
     py: 4,
     pb: {
       _: 0,
-      lg: 60,
+      ml: 160,
+    },
+    pt: '5rem',
+    px: {
+      _: 0,
+      ml: '2rem',
     },
   },
   ContainerProps: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+
     flexDirection: {
-      _: 'column',
-      ml: 'row',
+      _: 'column-reverse',
+      ml: 'row-reverse',
     },
     minWidth: {
       ml: 900,
     },
+    maxWidth: '1240px',
+    width: {
+      _: '100vw !important',
+    },
   },
 
   CaptionProps: {
-    my: {
-      _: 30,
-      lg: 135,
+    flexBasis: `40%`,
+    textAlign: {
+      _: 'center',
+      ml: 'left',
     },
-    maxWidth: 448,
+    mb: {
+      _: 60,
+      lg: 0,
+    },
   },
   TitleProps: {
     as: 'h1',
@@ -161,36 +221,53 @@ Welcome.defaultProps = {
     mt: 4,
   },
   ImageWrapperProps: {
-    zIndex: 4,
-    position: 'relative',
-    mb: {
-      _: 90,
-      lg: 0,
-    },
-    mt: {
-      _: 25,
-      md: 40,
-      ml: 80,
-    },
-    overflow: {
-      _: 'hidden',
-      md: 'visible',
-    },
-    maxWidth: {
-      _: 544,
-      ml: 400,
-      lg: 544,
-    },
+    //     vertical-align: ""
+    // border-style: solid;
+    // border-width: 5px;
+    // border-color: var(--theme-ui-colors-white,#fff);
+    // box-shadow: rgb(140 152 164 / 13%) 0px 0px 35px;
+    // border-radius: 1rem;
 
+    // mb: {
+    //   _: 90,
+    //   lg: 0,
+    // },
+    // mt: {
+    //   _: 25,
+    //   md: 40,
+    //   ml: 80,
+    // },
+    // overflow: {
+    //   _: 'hidden',
+    //   md: 'visible',
+    // },
+    flexBasis: {
+      _: null,
+      ml: '60%',
+    },
+    ml: {
+      _: null,
+      ml: '4rem',
+    },
+    textAlign: 'center',
+    // //  flexBasis: [null, null, null, `3/5`],
+    // //       [reverse ? 'ml' : 'mr']: [null, null, null, 5],
+    // //       position: `relative`,
+    // //       textAlign: `center`
+    // maxWidth: {
+    //   _: 544,
+    //   ml: 400,
+    //   lg: 544,
+    // },
     width: '100%',
   },
   ImageProps: {
     width: '100%',
-    maxWidth: {
-      _: 544,
-      ml: 400,
-      lg: 544,
-    },
+    // maxWidth: {
+    //   _: 544,
+    //   ml: 400,
+    //   lg: 544,
+    // },
   },
   ...data.welcome,
 };

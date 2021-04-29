@@ -76,17 +76,18 @@ export default {
         label: 'Services',
       },
       {
-        to: 'about',
-        label: 'About',
+        to: 'features',
+        label: 'Features',
       },
       {
         to: 'team',
         label: 'Team',
       },
       {
-        to: 'features',
-        label: 'Features',
+        to: 'about',
+        label: 'About',
       },
+
       // {
       //   to: 'pricing',
       //   label: 'Pricing',

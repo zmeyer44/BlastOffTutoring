@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gatsby:dev": "yarn workspace @pagerland/gatsby dev",
+    "gatsby:clean": "yarn workspace @pagerland/gatsby clean",
     "gatsby:build": "yarn workspace @pagerland/gatsby build",
     "gatsby:start": "yarn workspace @pagerland/gatsby serve",
     "next:dev": "yarn workspace @pagerland/next dev",

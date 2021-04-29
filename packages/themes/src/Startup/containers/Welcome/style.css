@@ -1,0 +1,85 @@
+.shadow {
+  box-shadow: rgb(140 152 164 / 13%) 0px 0px 35px;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--theme-ui-colors-white, #fff);
+  box-shadow: rgb(140 152 164 / 13%) 0px 0px 35px;
+  border-radius: 1rem;
+}
+h4 {
+  box-sizing: border-box;
+  margin: 0px 0px 1rem;
+  min-width: 0px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  line-height: 1.55;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--theme-ui-colors-omegaDarker, #2d3748);
+}
+.playBtn {
+  margin-bottom: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 300;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 1s ease, opacity 1s ease;
+}
+
+.icon {
+  transform: scale(0.8);
+  transform-origin: 50% 50%;
+  transition: transform 200ms ease-out;
+}
+
+#play:hover .icon {
+  transform: scale(0.9);
+}
+#play:hover .stroke-solid {
+  opacity: 1;
+  stroke-dashoffset: 300;
+}
+
+#play {
+  position: absolute;
+  bottom: 25;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.play-text {
+    margin-left: 75px;
+    color: white;
+}
+a:link, a:visited {
+white-space: nowrap;
+  text-decoration: none;
+}
+.video-btn {
+    white-space: nowrap;
+}
+@media only screen and (max-width: 1026px) and (min-width: 1024px) {
+    .play-text {
+    margin-left: 73px;
+}
+}
+@media only screen and (max-width: 405px) {
+    .video-btn {
+        display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#play {
+    margin-right: 120px;
+}
+}

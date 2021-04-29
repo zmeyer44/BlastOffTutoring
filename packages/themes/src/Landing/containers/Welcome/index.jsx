@@ -10,7 +10,7 @@ import Typography from '@pagerland/common/src/components/Typography';
 import Button from '@pagerland/common/src/components/Button';
 import Img from '@pagerland/common/src/components/Img';
 
-import hero from '../../assets/hero.png';
+import hero from '../../assets/newhero.png';
 import hero2x from '../../assets/hero@2x.png';
 
 import data from '../../data';
