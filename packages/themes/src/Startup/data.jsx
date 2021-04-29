@@ -88,10 +88,10 @@ export default {
         label: 'About',
       },
 
-      // {
-      //   to: 'pricing',
-      //   label: 'Pricing',
-      // },
+      {
+        to: 'pricing',
+        label: 'Pricing',
+      },
       // {
       //   to: 'blog',
       //   label: 'News',
