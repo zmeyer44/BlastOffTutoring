@@ -44,7 +44,7 @@ const Startup = props => (
     <Features name="features" />
     <Team name="team" />
     <About name="about" />
-    <Pricing name="pricing" />
+    {/* <Pricing name="pricing" /> */}
     {/* <Blog name="blog" /> */}
     <Contact name="contact" />
 

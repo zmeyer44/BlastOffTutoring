@@ -228,7 +228,7 @@ Welcome.defaultProps = {
     },
     ml: {
       _: null,
-      ml: '4rem',
+      ml: '3rem',
     },
     textAlign: 'center',
 
