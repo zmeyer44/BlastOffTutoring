@@ -47,6 +47,7 @@ const Startup = props => (
     <Pricing name="pricing" />
     {/* <Blog name="blog" /> */}
     <Contact name="contact" />
+
     <ScrollUp scrollStepInPx="100" delayInMs="10.50" />
 
     <Copyright />
@@ -58,14 +59,14 @@ Startup.propTypes = {
 };
 
 Startup.defaultProps = {
-  url: 'https://pager.land/gatsby/',
+  url: 'https://www.blastoffeducation.com/',
 };
 
 export default Startup;
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "hero2.png" }) {
+    imageOne: file(relativePath: { eq: "hero3.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           base64

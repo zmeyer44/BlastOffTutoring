@@ -86,7 +86,8 @@ const Welcome = ({
                     fill="#ffffff"
                     d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"
                   />
-                </svg> <span className="play-text">Watch Video</span>
+                </svg>{' '}
+                <span className="play-text">Watch Video</span>
               </Link>
             </Box>
           </Fade>
@@ -221,26 +222,6 @@ Welcome.defaultProps = {
     mt: 4,
   },
   ImageWrapperProps: {
-    //     vertical-align: ""
-    // border-style: solid;
-    // border-width: 5px;
-    // border-color: var(--theme-ui-colors-white,#fff);
-    // box-shadow: rgb(140 152 164 / 13%) 0px 0px 35px;
-    // border-radius: 1rem;
-
-    // mb: {
-    //   _: 90,
-    //   lg: 0,
-    // },
-    // mt: {
-    //   _: 25,
-    //   md: 40,
-    //   ml: 80,
-    // },
-    // overflow: {
-    //   _: 'hidden',
-    //   md: 'visible',
-    // },
     flexBasis: {
       _: null,
       ml: '60%',
@@ -250,24 +231,15 @@ Welcome.defaultProps = {
       ml: '4rem',
     },
     textAlign: 'center',
-    // //  flexBasis: [null, null, null, `3/5`],
-    // //       [reverse ? 'ml' : 'mr']: [null, null, null, 5],
-    // //       position: `relative`,
-    // //       textAlign: `center`
-    // maxWidth: {
-    //   _: 544,
-    //   ml: 400,
-    //   lg: 544,
-    // },
+
     width: '100%',
+    maxWidth: {
+      _: 544,
+      ml: 600,
+    },
   },
   ImageProps: {
     width: '100%',
-    // maxWidth: {
-    //   _: 544,
-    //   ml: 400,
-    //   lg: 544,
-    // },
   },
   ...data.welcome,
 };
