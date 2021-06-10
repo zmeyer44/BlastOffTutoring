@@ -10,5 +10,6 @@ export { default as Blog } from './Blog';
 export { default as Contact } from './Contact';
 export { default as Copyright } from './Copyright';
 export { default as Apply } from './Apply';
+export { default as Terms } from './Terms';
 export { default as Purchase } from './Purchase';
 export { default as ScrollUp } from './ScrollUp';
