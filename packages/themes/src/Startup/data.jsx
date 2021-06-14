@@ -31,6 +31,14 @@ import Avatar2 from './assets/avatars/mitchell.jpg';
 import Avatar22x from './assets/avatars/mitchell@2x.jpg';
 import Avatar3 from './assets/avatars/danielle.jpg';
 import Avatar32x from './assets/avatars/danielle@2x.jpg';
+import Avatar4 from './assets/avatars/srijan.jpg';
+import Avatar42x from './assets/avatars/srijan.jpg';
+import Avatar5 from './assets/avatars/emily.jpg';
+import Avatar52x from './assets/avatars/emily.jpg';
+import Avatar6 from './assets/avatars/lucas.jpg';
+import Avatar62x from './assets/avatars/lucas.jpg';
+import Avatar7 from './assets/avatars/james.jpg';
+import Avatar72x from './assets/avatars/james.jpg';
 
 import features1 from './assets/feature1.png';
 import features2 from './assets/feature2.png';
@@ -218,58 +226,58 @@ export default {
           instagram: 'https://www.instagram.com/daniellebrennerr/',
         },
       },
-      // {
-      //   avatar: {
-      //     src: Avatar4,
-      //     srcSet: `${Avatar4} 1x, ${Avatar42x} 2x`,
-      //   },
-      //   name: 'Judith Black',
-      //   position: 'Co-Founder, CEO',
-      //   social: {
-      //     linkedin: '#',
-      //     twitter: '#',
-      //     skype: '#',
-      //   },
-      // },
-      // {
-      //   avatar: {
-      //     src: Avatar5,
-      //     srcSet: `${Avatar5} 1x, ${Avatar52x} 2x`,
-      //   },
-      //   name: 'Robert Edwards',
-      //   position: 'Co-Founder, CEO',
-      //   social: {
-      //     linkedin: '#',
-      //     twitter: '#',
-      //     skype: '#',
-      //   },
-      // },
-      // {
-      //   avatar: {
-      //     src: Avatar6,
-      //     srcSet: `${Avatar6} 1x, ${Avatar62x} 2x`,
-      //   },
-      //   name: 'Dianne Robertson',
-      //   position: 'Co-Founder, CEO',
-      //   social: {
-      //     linkedin: '#',
-      //     twitter: '#',
-      //     skype: '#',
-      //   },
-      // },
-      // {
-      //   avatar: {
-      //     src: Avatar7,
-      //     srcSet: `${Avatar7} 1x, ${Avatar72x} 2x`,
-      //   },
-      //   name: 'Shane Black',
-      //   position: 'Co-Founder, CEO',
-      //   social: {
-      //     linkedin: '#',
-      //     twitter: '#',
-      //     skype: '#',
-      //   },
-      // },
+      {
+        avatar: {
+          src: Avatar4,
+          srcSet: `${Avatar4} 1x, ${Avatar42x} 2x`,
+        },
+        name: 'Srijan Sai',
+        position: 'Blog Writing Intern',
+        social: {
+          linkedin: '#',
+          twitter: '#',
+          instagram: '#',
+        },
+      },
+      {
+        avatar: {
+          src: Avatar5,
+          srcSet: `${Avatar5} 1x, ${Avatar52x} 2x`,
+        },
+        name: 'Emily Chiong',
+        position: 'Social Media Intern',
+        social: {
+          linkedin: 'https://www.linkedin.com/in/emily-chiong-778416210/',
+          twitter: '#',
+          instagram: '#',
+        },
+      },
+      {
+        avatar: {
+          src: Avatar6,
+          srcSet: `${Avatar6} 1x, ${Avatar62x} 2x`,
+        },
+        name: 'Lucas Diaz',
+        position: 'Marketing Intern',
+        social: {
+          linkedin: '#',
+          twitter: '#',
+          instagram: '#',
+        },
+      },
+      {
+        avatar: {
+          src: Avatar7,
+          srcSet: `${Avatar7} 1x, ${Avatar72x} 2x`,
+        },
+        name: 'James Protonentis',
+        position: 'Blog Writing Intern',
+        social: {
+          linkedin: '#',
+          twitter: '#',
+          instagram: '#',
+        },
+      },
       // {
       //   avatar: {
       //     src: Avatar8,
@@ -562,7 +570,7 @@ export default {
       },
     ],
   },
-  copyright: '© 2021 Blast Off Tutoring',
+  copyright: `© ${new Date().getFullYear()} Blast Off Tutoring`,
   navbaralt: {
     actions: [
       {
