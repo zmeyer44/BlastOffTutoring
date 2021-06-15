@@ -111,7 +111,7 @@ export default {
     ],
     actions: [
       {
-        href: 'https://blast-off-tutoring.web.app/',
+        href: 'https://app.blastofftutoring.com/',
         label: 'Sign In',
       },
     ],
@@ -124,7 +124,7 @@ export default {
       {
         label: 'Get Started',
         to: '#',
-        href: 'https://blast-off-tutoring.web.app/',
+        href: 'https://app.blastofftutoring.com/',
         target: '_blank',
         as: 'a',
         ...smoothLinkProps,
@@ -498,7 +498,7 @@ export default {
       },
       {
         icon: Linkedin,
-        href: 'https://linkedin.com',
+        href: 'https://www.linkedin.com/company/blast-off-tutoring/about/',
         title: 'Linkedin',
       },
     ],
