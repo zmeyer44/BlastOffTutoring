@@ -52,8 +52,8 @@ import PricingBasic from './assets/pricing/basic.svg';
 import PricingAdvanced from './assets/pricing/advanced.svg';
 import PricingExpert from './assets/pricing/expert.svg';
 
-import Article1 from './assets/articles/article-1.jpg';
-import Article12x from './assets/articles/article-1@2x.jpg';
+import Article1 from './assets/articles/zachprofile.jpg';
+import Article12x from './assets/articles/zachprofile.jpg';
 import Article2 from './assets/articles/article-2.jpg';
 import Article22x from './assets/articles/article-2@2x.jpg';
 import Article3 from './assets/articles/article-3.jpg';
