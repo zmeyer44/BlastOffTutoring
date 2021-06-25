@@ -25,8 +25,8 @@ import Welcome2x from './assets/hero.png';
 import AboutUs from './assets/merch.png';
 import AboutUs2x from './assets/merch@2x.png';
 
-import Avatar1 from './assets/avatars/zach.jpg';
-import Avatar12x from './assets/avatars/zach@2x.jpg';
+import Avatar1 from './assets/avatars/zachprofile.jpg';
+import Avatar12x from './assets/avatars/zachprofile.jpg';
 import Avatar2 from './assets/avatars/mitchell.jpg';
 import Avatar22x from './assets/avatars/mitchell@2x.jpg';
 import Avatar3 from './assets/avatars/danielle.jpg';
@@ -52,8 +52,8 @@ import PricingBasic from './assets/pricing/basic.svg';
 import PricingAdvanced from './assets/pricing/advanced.svg';
 import PricingExpert from './assets/pricing/expert.svg';
 
-import Article1 from './assets/articles/zachprofile.jpg';
-import Article12x from './assets/articles/zachprofile.jpg';
+import Article1 from './assets/articles/article-1.jpg';
+import Article12x from './assets/articles/article-1@2x.jpg';
 import Article2 from './assets/articles/article-2.jpg';
 import Article22x from './assets/articles/article-2@2x.jpg';
 import Article3 from './assets/articles/article-3.jpg';
