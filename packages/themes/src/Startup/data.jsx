@@ -149,7 +149,7 @@ export default {
         icon: Search,
         title: 'Find a Tutor',
         text:
-          'View our library of highschool tutors loooking to help out in exchange for community service credit.',
+          'View our library of highschool tutors looking to help out in exchange for community service credit.',
       },
       {
         icon: VideoChat,
