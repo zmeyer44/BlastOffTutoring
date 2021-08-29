@@ -39,6 +39,7 @@ import Avatar6 from './assets/avatars/lucas.jpg';
 import Avatar62x from './assets/avatars/lucas.jpg';
 import Avatar7 from './assets/avatars/james.jpg';
 import Avatar72x from './assets/avatars/james.jpg';
+import Perry from './assets/avatars/perry.jpeg';
 
 import features1 from './assets/feature1.png';
 import features2 from './assets/feature2.png';
@@ -224,6 +225,19 @@ export default {
           linkedin: '#',
           twitter: '#',
           instagram: 'https://www.instagram.com/daniellebrennerr/',
+        },
+      },
+      {
+        avatar: {
+          src: Perry,
+          srcSet: `${Perry} 1x, ${Perry} 2x`,
+        },
+        name: 'Perry Krosser',
+        position: 'Head of Student Ambassadors',
+        social: {
+          linkedin: '#',
+          twitter: '#',
+          instagram: '#',
         },
       },
       {
