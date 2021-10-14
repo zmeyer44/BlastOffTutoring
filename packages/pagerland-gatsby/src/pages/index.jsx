@@ -17,6 +17,7 @@ import {
   Blog,
   Contact,
   ScrollUp,
+  Schools,
 } from '@pagerland/themes/src/Startup/containers';
 
 import preview from '@pagerland/themes/src/Startup/assets/preview.png';
@@ -40,7 +41,7 @@ const Startup = props => (
       {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
     </Welcome>
     <Services name="services" />
-    {/* <Blog name="schools" /> */}
+    <Schools name="schools" />
     <Features name="features" />
     <Team name="team" />
     <About name="about" />
@@ -49,7 +50,6 @@ const Startup = props => (
     <Contact name="contact" />
 
     <ScrollUp scrollStepInPx="100" delayInMs="10.50" />
-
     <Copyright />
   </Theme>
 );
