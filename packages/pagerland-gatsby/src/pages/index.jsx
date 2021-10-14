@@ -40,7 +40,7 @@ const Startup = props => (
       {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
     </Welcome>
     <Services name="services" />
-    <Blog name="schools" />
+    {/* <Blog name="schools" /> */}
     <Features name="features" />
     <Team name="team" />
     <About name="about" />
