@@ -17,12 +17,12 @@ import {
   Blog,
   Contact,
   ScrollUp,
-  Schools,
 } from '@pagerland/themes/src/Startup/containers';
 
 import preview from '@pagerland/themes/src/Startup/assets/preview.png';
 
 import SEO from '../components/SEO';
+import Schools from '../components/Schools';
 
 const Startup = props => (
   <Theme>
