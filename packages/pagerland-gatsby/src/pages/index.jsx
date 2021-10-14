@@ -18,6 +18,7 @@ import {
   Blog,
   Contact,
   ScrollUp,
+  Schools,
 } from '@pagerland/themes/src/Startup/containers';
 
 import preview from '@pagerland/themes/src/Startup/assets/preview.png';
@@ -41,6 +42,7 @@ const Startup = props => (
       {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
     </Welcome>
     <Services name="services" />
+    <Schools name="schools" />
     <Features name="features" />
     <Team name="team" />
     <About name="about" />
