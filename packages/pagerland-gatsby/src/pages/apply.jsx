@@ -35,7 +35,7 @@ Application.propTypes = {
 };
 
 Application.defaultProps = {
-  url: 'https://pager.land/gatsby/',
+  url: 'https://www.blastofftutoring.com/',
 };
 
 export default Application;
