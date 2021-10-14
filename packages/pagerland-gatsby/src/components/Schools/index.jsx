@@ -48,7 +48,7 @@ const Schools = ({ SchoolIconProps, supporters }) => {
       >
         {supporters.map((school, key) => (
           <div className="school" key={key}>
-            <Link href={school.link}>
+            <Link href={school.link} target="_blank">
               <Img src={school.image} {...SchoolIconProps} />
             </Link>
           </div>
