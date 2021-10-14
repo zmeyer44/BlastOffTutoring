@@ -61,7 +61,7 @@ Startup.propTypes = {
 };
 
 Startup.defaultProps = {
-  url: 'https://www.blastoffeducation.com/',
+  url: 'https://www.blastofftutoring.com/',
 };
 
 export default Startup;
