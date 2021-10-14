@@ -18,8 +18,8 @@ import {
   Blog,
   Contact,
   ScrollUp,
-  Schools,
 } from '@pagerland/themes/src/Startup/containers';
+import Schools from '@pagerland/themes/src/Startup/containers/Schools';
 
 import preview from '@pagerland/themes/src/Startup/assets/preview.png';
 
