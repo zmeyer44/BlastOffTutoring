@@ -229,6 +229,7 @@ export default {
 
     cta: {
       label: 'Learn more about us',
+      as: Link,
       to: '/purchase',
     },
   },
