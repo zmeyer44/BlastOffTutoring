@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 
 import NHS from './assets/supporters/nhs.png';
 import CBS from './assets/supporters/cbs.png';
+import ABC from './assets/supporters/abc7.png';
 import Newsday from './assets/supporters/newsday.png';
 import NYSED from './assets/supporters/nysed.png';
 import NASSP from './assets/supporters/nassp.svg';
@@ -18,6 +19,10 @@ export default {
       {
         image: NHS,
         link: 'https://www.nhs.us/2021/05/26/morning-announcements-summer-2021/',
+      },
+      {
+        image: ABC,
+        link: 'https://abc7ny.com/covid-pandemic-online-tutoring-blastoff-blast-off/11375990/',
       },
       {
         image: CBS,
