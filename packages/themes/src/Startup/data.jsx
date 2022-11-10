@@ -29,8 +29,8 @@ import Avatar1 from './assets/avatars/zachprofile.jpg';
 import Avatar12x from './assets/avatars/zachprofile.jpg';
 import Avatar2 from './assets/avatars/mitchell.jpg';
 import Avatar22x from './assets/avatars/mitchell.jpg';
-import Avatar3 from './assets/avatars/danielle.jpg';
-import Avatar32x from './assets/avatars/danielle@2x.jpg';
+import Avatar3 from './assets/avatars/ali.png';
+import Avatar32x from './assets/avatars/ali.png';
 import Avatar4 from './assets/avatars/srijan.jpg';
 import Avatar42x from './assets/avatars/srijan.jpg';
 import Avatar5 from './assets/avatars/emily.jpg';
@@ -80,7 +80,8 @@ const encode = data => {
     .join('&');
 };
 
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+const phoneRegExp =
+  /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 export default {
   title: 'Blast Off Tutoring',
@@ -129,8 +130,7 @@ export default {
   },
   welcome: {
     title: 'Free Peer To Peer Tutoring',
-    text:
-      'We connect high school students looking for community service hours with students in need of a tutor.',
+    text: 'We connect high school students looking for community service hours with students in need of a tutor.',
     actions: [
       {
         label: 'Get Started',
@@ -153,20 +153,17 @@ export default {
       {
         icon: SignIn,
         title: 'Sign Up',
-        text:
-          'Create an account with the school code provided by your district to start exploring the platform.',
+        text: 'Create an account with the school code provided by your district to start exploring the platform.',
       },
       {
         icon: Search,
         title: 'Find a Tutor',
-        text:
-          'View our library of highschool tutors looking to help out in exchange for community service credit.',
+        text: 'View our library of highschool tutors looking to help out in exchange for community service credit.',
       },
       {
         icon: VideoChat,
         title: 'Schedule a Meeting',
-        text:
-          'Once you found the right tutor for you, start chatting and set up a time to meet though our online video chat.',
+        text: 'Once you found the right tutor for you, start chatting and set up a time to meet though our online video chat.',
       },
     ],
     cta: {
@@ -187,23 +184,19 @@ export default {
       },
       {
         image: CBS,
-        link:
-          'https://newyork.cbslocal.com/2021/01/08/long-island-teen-builds-peer-tutoring-website-to-streamline-learning-during-pandemic/',
+        link: 'https://newyork.cbslocal.com/2021/01/08/long-island-teen-builds-peer-tutoring-website-to-streamline-learning-during-pandemic/',
       },
       {
         image: Newsday,
-        link:
-          'https://www.newsday.com/long-island/education/way-to-go-student-launches-tutoring-website-1.50156880',
+        link: 'https://www.newsday.com/long-island/education/way-to-go-student-launches-tutoring-website-1.50156880',
       },
       {
         image: NYSED,
-        link:
-          'http://www.nysed.gov/curriculum-instruction/staying-connected-your-stories-april-30-2021',
+        link: 'http://www.nysed.gov/curriculum-instruction/staying-connected-your-stories-april-30-2021',
       },
       {
         image: NASSP,
-        link:
-          'https://www.nassp.org/2021/10/12/virtual-tutoring-program-fills-a-need-for-many-students/',
+        link: 'https://www.nassp.org/2021/10/12/virtual-tutoring-program-fills-a-need-for-many-students/',
       },
       {
         image: NATSTUCO,
@@ -229,8 +222,7 @@ export default {
       srcSet: `${AboutUs} 1x, ${AboutUs2x} 2x`,
     },
     title: 'About us',
-    text:
-      "We were founded by brothers Zachary and Mitchell Meyer when Mitchell couldn't find a way to fulfill his community service requirements for National Honors Society. While struggling to find students to tutor, he thought that there must be a better way. After approaching Zach with his idea, they got to work building what is now Blast Off Tutoring. We strive to provide students free tutoring sessions from their peers while giving community service opportunities for those looking to bolster their résumé.",
+    text: "We were founded by brothers Zachary and Mitchell Meyer when Mitchell couldn't find a way to fulfill his community service requirements for National Honors Society. While struggling to find students to tutor, he thought that there must be a better way. After approaching Zach with his idea, they got to work building what is now Blast Off Tutoring. We strive to provide students free tutoring sessions from their peers while giving community service opportunities for those looking to bolster their résumé.",
 
     cta: {
       label: 'Learn more about us',
@@ -240,8 +232,7 @@ export default {
   },
   team: {
     title: 'Meet our team',
-    text:
-      'We may be small, but we are powerful! Our team is dedicated to providing users with the best possible experience while using our services. We are also looking for summer interns to help out growing our company. Click the link below to apply now.',
+    text: 'We may be small, but we are powerful! Our team is dedicated to providing users with the best possible experience while using our services. We are also looking for summer interns to help out growing our company. Click the link below to apply now.',
     cta: {
       label: 'Join the Team',
       as: Link,
@@ -279,12 +270,12 @@ export default {
           src: Avatar3,
           srcSet: `${Avatar3} 1x, ${Avatar32x} 2x`,
         },
-        name: 'Danielle Brenner',
+        name: 'Alison Meyer',
         position: 'Social Media Manager',
         social: {
           linkedin: '#',
           twitter: '#',
-          instagram: 'https://www.instagram.com/daniellebrennerr/',
+          instagram: 'https://www.linkedin.com/in/alison-meyer-557345225/',
         },
       },
       {
@@ -369,8 +360,7 @@ export default {
   },
   features: {
     title: 'Discover what makes Blast Off so great',
-    text:
-      'Using our platform is simple. First browse our library of tutors to find who is right for you, start messaging them to schedule a time to meet, and then use our virtual lesson space to get the most from your lesson.',
+    text: 'Using our platform is simple. First browse our library of tutors to find who is right for you, start messaging them to schedule a time to meet, and then use our virtual lesson space to get the most from your lesson.',
     features: [
       {
         title: 'Find a Tutor',
@@ -379,14 +369,12 @@ export default {
       },
       {
         title: 'Send a message',
-        text:
-          'Once you found the right tutor, start chatting with them to schedule a time to meet.',
+        text: 'Once you found the right tutor, start chatting with them to schedule a time to meet.',
         details: <Img src={features2} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
       },
       {
         title: 'Video Chat',
-        text:
-          'Use our live video chat app to meet with a tutor. We have a live whiteboard to work out problems.',
+        text: 'Use our live video chat app to meet with a tutor. We have a live whiteboard to work out problems.',
         details: <Img src={features3} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
       },
     ],
@@ -501,8 +489,7 @@ export default {
         srcSet: `${Article1} 1x, ${Article12x} 2x`,
         date: 'Today',
         title: "Online learning is here to stay, so it's time for you to adjust",
-        text:
-          'The Corona Virus has changed the way that we look at education. Hybrid learning environments will force students to overcome some new challenges that they face. Technology is also continuing to play a larger role in education aswell... ',
+        text: 'The Corona Virus has changed the way that we look at education. Hybrid learning environments will force students to overcome some new challenges that they face. Technology is also continuing to play a larger role in education aswell... ',
       },
       {
         url: '#',
@@ -839,8 +826,7 @@ export default {
   },
   terms: {
     title: 'Terms and Conditions',
-    text:
-      'We are committed to student safety and do everything in our power to keep Blast Off Tutoring safe and secure.',
+    text: 'We are committed to student safety and do everything in our power to keep Blast Off Tutoring safe and secure.',
     content: [
       {
         heading: 'Privacy Policy',
