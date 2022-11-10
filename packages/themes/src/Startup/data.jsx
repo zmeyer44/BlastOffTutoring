@@ -273,9 +273,9 @@ export default {
         name: 'Alison Meyer',
         position: 'Social Media Manager',
         social: {
-          linkedin: '#',
-          twitter: '#',
-          instagram: 'https://www.linkedin.com/in/alison-meyer-557345225/',
+          linkedin: 'https://www.linkedin.com/in/alison-meyer-557345225/',
+          twitter: 'https://www.linkedin.com/in/alison-meyer-557345225/',
+          instagram: 'https://www.instagram.com/aliimeyerr/',
         },
       },
       {
