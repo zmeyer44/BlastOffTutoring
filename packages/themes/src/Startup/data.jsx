@@ -29,8 +29,8 @@ import Avatar1 from './assets/avatars/zachprofile.jpg';
 import Avatar12x from './assets/avatars/zachprofile.jpg';
 import Avatar2 from './assets/avatars/mitchell.jpg';
 import Avatar22x from './assets/avatars/mitchell.jpg';
-import Avatar3 from './assets/avatars/danielle.jpg';
-import Avatar32x from './assets/avatars/danielle@2x.jpg';
+import Avatar3 from './assets/avatars/ali.png';
+import Avatar32x from './assets/avatars/ali.png';
 import Avatar4 from './assets/avatars/srijan.jpg';
 import Avatar42x from './assets/avatars/srijan.jpg';
 import Avatar5 from './assets/avatars/emily.jpg';
@@ -290,12 +290,12 @@ Join us as we journey towards a more connected, collaborative, and successful fu
           src: Avatar3,
           srcSet: `${Avatar3} 1x, ${Avatar32x} 2x`,
         },
-        name: 'Danielle Brenner',
+        name: 'Alison Meyer',
         position: 'Social Media Manager',
         social: {
-          linkedin: '#',
-          twitter: '#',
-          instagram: 'https://www.instagram.com/daniellebrennerr/',
+          linkedin: 'https://www.linkedin.com/in/alison-meyer-557345225/',
+          twitter: 'https://www.linkedin.com/in/alison-meyer-557345225/',
+          instagram: 'https://www.instagram.com/aliimeyerr/',
         },
       },
       {
