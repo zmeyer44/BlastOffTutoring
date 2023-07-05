@@ -128,9 +128,9 @@ export default {
     ],
   },
   welcome: {
-    title: 'Free Peer To Peer Tutoring',
+    title: 'Enabling Peer To Peer Tutoring',
     text:
-      'We connect high school students looking for community service hours with students in need of a tutor.',
+      'Your hub for simplified, effortless, and engaging peer tutoring managment and facilitation.',
     actions: [
       {
         label: 'Get Started',
@@ -229,19 +229,7 @@ export default {
       srcSet: `${AboutUs} 1x, ${AboutUs2x} 2x`,
     },
     title: 'About us',
-    text: `At Blast Off Tutoring, we're shaping the future of education by fostering an environment of peer-to-peer learning. We firmly believe in the untapped potential every student has to offer, and our mission is to unlock it by creating a community where knowledge sharing and social interactions flourish.
-     
-Our platform is based on the principle that collaborative learning not only enriches academic understanding but also builds vital communication skills and empathy. In a rapidly evolving digital world, these human-centric skills stand at the forefront of personal and professional success.
-
-What sets Blast Off Tutoring apart is our focus on holistic development. We recognize the importance of academic excellence, but we also understand that learning extends beyond textbooks. The exchange of ideas, the spark of understanding, and the shared experience of discovery: these are the elements that constitute true learning. And these are what we foster at Blast Off.
-
-In our community, students help each other to unravel complex problems, demystify daunting subjects, and boost confidence. By encouraging students to both impart and gain knowledge, we’re creating an empowering cycle of continuous learning and growth.
-
-Blast Off is more than just a tutoring platform—it's a launchpad. A place where students lift each other to reach new academic heights, developing not just their knowledge but also essential life skills.
-
-Join us as we journey towards a more connected, collaborative, and successful future of education.     
-     
-      `,
+    text: `At Blast Off Turoting, we're redefining aducation through peer-to-peer learning. We believe in harnessing every student's potential to create a knowledge-sharing community where both academic understanding and vital human centric skills flourish. Our platform encourages students to work through complex problems together, trnasforming learning into an empowering cycle of growth. Blast Off is more than a tutoring platform, it's a launchpad for students to elevate each other!`,
 
     cta: {
       label: 'Learn more about us',

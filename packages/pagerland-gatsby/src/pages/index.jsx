@@ -28,7 +28,8 @@ const Startup = props => (
   <Theme>
     <Helmet>
       <link href={theme.typography.googleFont} rel="stylesheet" />
-      <meta name="theme-color" content={theme.colors.primary} />
+      <meta name="theme-color" content="#ffffff" />
+      {/* <meta name="theme-color" content={theme.colors.primary} /> */}
       <meta property="og:image" content={`${props.url}${preview}`} />
     </Helmet>
     <SEO title="Home" />
