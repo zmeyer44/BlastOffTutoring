@@ -229,7 +229,7 @@ export default {
       srcSet: `${AboutUs} 1x, ${AboutUs2x} 2x`,
     },
     title: 'About us',
-    text: `At Blast Off Turoting, we're redefining aducation through peer-to-peer learning. We believe in harnessing every student's potential to create a knowledge-sharing community where both academic understanding and vital human centric skills flourish. Our platform encourages students to work through complex problems together, trnasforming learning into an empowering cycle of growth. Blast Off is more than a tutoring platform, it's a launchpad for students to elevate each other!`,
+    text: `At Blast Off Tutoring, we're redefining education through peer-to-peer learning. We believe in harnessing every student's potential to create a knowledge-sharing community where both academic understanding and vital human centric skills flourish. Our platform encourages students to work through complex problems together, transforming learning into an empowering cycle of growth. Blast Off is more than a tutoring platform, it's a launchpad for students to elevate each other!`,
 
     cta: {
       label: 'Learn more about us',
