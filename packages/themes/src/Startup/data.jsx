@@ -229,8 +229,19 @@ export default {
       srcSet: `${AboutUs} 1x, ${AboutUs2x} 2x`,
     },
     title: 'About us',
-    text:
-      "We were founded by brothers Zachary and Mitchell Meyer when Mitchell couldn't find a way to fulfill his community service requirements for National Honors Society. While struggling to find students to tutor, he thought that there must be a better way. After approaching Zach with his idea, they got to work building what is now Blast Off Tutoring. We strive to provide students free tutoring sessions from their peers while giving community service opportunities for those looking to bolster their résumé.",
+    text: `At Blast Off Tutoring, we're shaping the future of education by fostering an environment of peer-to-peer learning. We firmly believe in the untapped potential every student has to offer, and our mission is to unlock it by creating a community where knowledge sharing and social interactions flourish.
+     
+Our platform is based on the principle that collaborative learning not only enriches academic understanding but also builds vital communication skills and empathy. In a rapidly evolving digital world, these human-centric skills stand at the forefront of personal and professional success.
+
+What sets Blast Off Tutoring apart is our focus on holistic development. We recognize the importance of academic excellence, but we also understand that learning extends beyond textbooks. The exchange of ideas, the spark of understanding, and the shared experience of discovery: these are the elements that constitute true learning. And these are what we foster at Blast Off.
+
+In our community, students help each other to unravel complex problems, demystify daunting subjects, and boost confidence. By encouraging students to both impart and gain knowledge, we’re creating an empowering cycle of continuous learning and growth.
+
+Blast Off is more than just a tutoring platform—it's a launchpad. A place where students lift each other to reach new academic heights, developing not just their knowledge but also essential life skills.
+
+Join us as we journey towards a more connected, collaborative, and successful future of education.     
+     
+      `,
 
     cta: {
       label: 'Learn more about us',
@@ -370,7 +381,7 @@ export default {
   features: {
     title: 'Discover what makes Blast Off so great',
     text:
-      'Using our platform is simple. First browse our library of tutors to find who is right for you, start messaging them to schedule a time to meet, and then use our virtual lesson space to get the most from your lesson.',
+      "Blast Off stands out as it harnesses the power of peer-to-peer learning, creating a space where students not only gain academic knowledge, but also develop essential social skills and lasting relationships. It's an intuitive platform that simplifies district-wide peer tutoring management, making the process more accessible and effective than ever for educators.",
     features: [
       {
         title: 'Find a Tutor',

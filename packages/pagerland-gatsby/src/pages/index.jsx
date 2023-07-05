@@ -43,7 +43,7 @@ const Startup = props => (
     <Services name="services" />
     <Schools name="schools" />
     <Features name="features" />
-    <Team name="team" />
+    {/* <Team name="team" /> */}
     <About name="about" />
     {/* <Pricing name="pricing" /> */}
     {/* <Blog name="blog" /> */}
