@@ -130,7 +130,7 @@ export default {
   welcome: {
     title: 'Enabling Peer To Peer Tutoring',
     text:
-      'Your hub for simplified, effortless, and engaging peer tutoring managment and facilitation.',
+      'Your hub for simplified, effortless, and engaging peer tutoring management and facilitation.',
     actions: [
       {
         label: 'Get Started',
